@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     22199,        641]
-NotebookOptionsPosition[     19187,        534]
-NotebookOutlinePosition[     19532,        549]
-CellTagsIndexPosition[     19489,        546]
+NotebookDataLength[     18750,        518]
+NotebookOptionsPosition[     16610,        448]
+NotebookOutlinePosition[     16955,        463]
+CellTagsIndexPosition[     16912,        460]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -242,8 +242,7 @@ Cell[BoxData[
   3.6585914891858683`*^9}}],
 
 Cell[BoxData["\<\"D:\\\\Program Files\\\\Git\\\\bin\"\>"], "Output",
- CellChangeTimes->{3.658417091704645*^9, 3.658417157281801*^9, 
-  3.6585914929668875`*^9}]
+ CellChangeTimes->{{3.658595082056291*^9, 3.6585950973133354`*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -253,8 +252,10 @@ Cell[BoxData[
  CellChangeTimes->{{3.658417158266806*^9, 3.658417164250823*^9}}],
 
 Cell[BoxData[
- RowBox[{"{", "\<\"C:\\\\Users\\\\Kuba\\\\Documents\"\>", "}"}]], "Output",
- CellChangeTimes->{3.6584171646108236`*^9, 3.6585914961518955`*^9}]
+ RowBox[{"{", 
+  RowBox[{"\<\"D:\\\\Program Files\\\\Git\\\\bin\"\>", 
+   ",", "\<\"C:\\\\Users\\\\Kuba\\\\Documents\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{{3.6585950918723216`*^9, 3.6585950983013372`*^9}}]
 }, Open  ]],
 
 Cell[BoxData[
@@ -291,9 +292,7 @@ Cell[BoxData[
    3.6583925699662275`*^9, {3.6584169533349967`*^9, 3.658416954013036*^9}}],
 
 Cell[BoxData["\<\"git version 1.9.5.msysgit.1\\n\"\>"], "Output",
- CellChangeTimes->{{3.658392269596726*^9, 3.6583923656220045`*^9}, 
-   3.658392570356229*^9, {3.658416947432659*^9, 3.6584169555141215`*^9}, 
-   3.658417668197197*^9, 3.658417869544121*^9, 3.6585915035349092`*^9}]
+ CellChangeTimes->{3.658595108580387*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -313,8 +312,7 @@ Cell[BoxData[
   RowBox[{"\<\"-C\"\>", 
    ",", "\<\"\\\"D:\\\\programowanie\\\\workspace\\\\KubaRepo\\\\Mathematica\\\
 \\SmallPackages\\\\MoreCalculusDev\\\\\\\"\"\>"}], "]"}]], "Output",
- CellChangeTimes->{3.6584179245762672`*^9, 3.65841795711845*^9, 
-  3.6584180146365633`*^9, 3.658591517151949*^9}]
+ CellChangeTimes->{3.6585951041723657`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -324,23 +322,12 @@ Cell[BoxData[
  CellChangeTimes->{{3.658417964520461*^9, 3.65841797394948*^9}}],
 
 Cell[BoxData["\<\"git version 1.9.5.msysgit.1\\n\"\>"], "Output",
- CellChangeTimes->{3.6584179745114865`*^9, 3.6584180164185705`*^9, 
-  3.6585915242239733`*^9}]
+ CellChangeTimes->{3.6585951107973967`*^9}]
 }, Open  ]],
 
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"gitCall", "[", "\"\<init\>\"", "]"}]], "Input",
- CellChangeTimes->{{3.6584180218395824`*^9, 3.6584180290225987`*^9}}],
-
-Cell[BoxData["\<\"Initialized empty Git repository in \
-D:/programowanie/workspace/KubaRepo/Mathematica/SmallPackages/MoreCalculusDev/\
-.git/\\n\"\>"], "Output",
- CellChangeTimes->{3.6584180396016197`*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
+Cell["gitCall[\"init\"]", "Text",
+ CellChangeTimes->{{3.6584180218395824`*^9, 3.6584180290225987`*^9}, 
+   3.658595115473405*^9}],
 
 Cell[BoxData[
  RowBox[{"gitCall", "[", 
@@ -349,21 +336,16 @@ Cell[BoxData[
   3.658418171869762*^9, 3.6584181742197657`*^9}, {3.6584182248098807`*^9, 
   3.658418225809883*^9}}],
 
-Cell[BoxData["\<\"\"\>"], "Output",
- CellChangeTimes->{3.6584181750857725`*^9, 3.658418226861889*^9}]
-}, Open  ]],
-
 Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"gitCall", "[", "\"\<status\>\"", "]"}]], "Input",
  CellChangeTimes->{{3.658418185231792*^9, 3.658418191166803*^9}}],
 
-Cell[BoxData["\<\"On branch master\\nYour branch is up-to-date with \
-'origin/master'.\\n\\nnothing to commit, working directory clean\\n\"\>"], \
-"Output",
- CellChangeTimes->{3.658418191588809*^9, 3.658418228525899*^9, 
-  3.6585915388420286`*^9, 3.658593143201849*^9}]
+Cell[BoxData["\<\"On branch master\\nYour branch is ahead of 'origin/master' \
+by 1 commit.\\n  (use \\\"git push\\\" to publish your local \
+commits)\\n\\nnothing to commit, working directory clean\\n\"\>"], "Output",
+ CellChangeTimes->{3.658595119076431*^9}]
 }, Open  ]],
 
 Cell["repository setup on github", "Text",
@@ -375,7 +357,8 @@ https://help.github.com/articles/generating-ssh-keys/\
 \>", "Text",
  CellChangeTimes->{{3.6585917457017326`*^9, 3.658591766351778*^9}}],
 
-Cell[CellGroupData[{
+Cell["change https url to ssh", "Text",
+ CellChangeTimes->{{3.6585933308769035`*^9, 3.658593339542921*^9}}],
 
 Cell[BoxData[
  RowBox[{"gitCall", "[", 
@@ -385,14 +368,6 @@ Cell[BoxData[
  CellChangeTimes->{{3.658428304349672*^9, 3.658428328211707*^9}, {
   3.658593158691735*^9, 3.6585931593667736`*^9}}],
 
-Cell[BoxData["\<\"On branch master\\nYour branch is up-to-date with \
-'origin/master'.\\n\\nnothing to commit, working directory clean\\n\"\>"], \
-"Output",
- CellChangeTimes->{3.6584283293737097`*^9, 3.658593160234823*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
 Cell[BoxData[
  RowBox[{"gitCall", "[", 
   RowBox[{
@@ -400,38 +375,14 @@ Cell[BoxData[
    "\"\<https://github.com/kubaPod/MoreCalculusDev.git\>\""}], "]"}]], "Input",
  CellChangeTimes->{{3.6584283547547493`*^9, 3.658428388206859*^9}}],
 
-Cell[BoxData["\<\"\"\>"], "Output",
- CellChangeTimes->{3.6584283918058662`*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
 Cell[BoxData[
  RowBox[{"gitCall", "[", "\"\<status\>\"", "]"}]], "Input",
  CellChangeTimes->{{3.658428394142874*^9, 3.6584284008198867`*^9}}],
-
-Cell[BoxData["\<\"On branch master\\nChanges not staged for commit:\\n  (use \
-\\\"git add <file>...\\\" to update what will be committed)\\n  (use \\\"git \
-checkout -- <file>...\\\" to discard changes in working \
-directory)\\n\\n\\tmodified:   MoreCalculus.nb\\n\\nno changes added to \
-commit (use \\\"git add\\\" and/or \\\"git commit -a\\\")\\n\"\>"], "Output",
- CellChangeTimes->{3.658428401151892*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"gitCall", "[", 
   RowBox[{"\"\<remote\>\"", ",", " ", "\"\<-v\>\""}], "]"}]], "Input",
  CellChangeTimes->{{3.658592237653989*^9, 3.6585922496000247`*^9}}],
-
-Cell[BoxData["\<\"origin\\tgit@github.com:kubaPod/MoreCalculusDev.git (fetch)\
-\\norigin\\tgit@github.com:kubaPod/MoreCalculusDev.git (push)\\n\"\>"], \
-"Output",
- CellChangeTimes->{3.6585922499980288`*^9, 3.6585926520885935`*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"gitCall", "[", 
@@ -441,23 +392,9 @@ Cell[BoxData[
  CellChangeTimes->{{3.6585925884004073`*^9, 3.6585925961524196`*^9}, {
   3.6585926282834997`*^9, 3.658592642795535*^9}}],
 
-Cell[BoxData["\<\"\"\>"], "Output",
- CellChangeTimes->{3.6585926473525686`*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
 Cell[BoxData[
  RowBox[{"gitCall", "[", 
   RowBox[{"\"\<remote\>\"", ",", " ", "\"\<-v\>\""}], "]"}]], "Input"],
-
-Cell[BoxData["\<\"origin\\tgit@github.com:kubaPod/MoreCalculusDev.git (fetch)\
-\\norigin\\tgit@github.com:kubaPod/MoreCalculusDev.git (push)\\n\"\>"], \
-"Output",
- CellChangeTimes->{3.658592658775607*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"gitCall", "[", 
@@ -466,14 +403,18 @@ Cell[BoxData[
  CellChangeTimes->{{3.6585927317488575`*^9, 3.6585927544759407`*^9}, {
   3.6585928074293227`*^9, 3.6585928156303544`*^9}}],
 
-Cell[BoxData["$Aborted"], "Output",
- CellChangeTimes->{3.6585929470098076`*^9}]
-}, Open  ]],
+Cell[BoxData[
+ RowBox[{"RunProcess", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+    "\"\<git\>\"", ",", "$repoPath", ",", "\"\<push\>\"", " ", ",", 
+     "\"\<origin\>\"", ",", "\"\<master\>\""}], "}"}], ",", 
+   "\"\<StandardOutput\>\"", ",", "\"\<561Kubiszon561\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.658593678915912*^9, 3.6585936881489363`*^9}}],
 
 Cell[BoxData["s"], "Input",
  CellChangeTimes->{3.6584311726445417`*^9}],
-
-Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"Import", "[", "\[IndentingNewLine]", 
@@ -484,28 +425,14 @@ Cell[BoxData[
  CellChangeTimes->{{3.6583926000773754`*^9, 3.6583926403435526`*^9}, {
   3.658393098071536*^9, 3.6583931160955696`*^9}}],
 
-Cell[BoxData["\<\"\"\>"], "Output",
- CellChangeTimes->{{3.6583926314925356`*^9, 3.6583926407825565`*^9}, {
-  3.658393100438542*^9, 3.658393118509576*^9}}]
-}, Open  ]],
-
 Cell[BoxData[
  RowBox[{"SystemOpen", "@", 
   "\"\<C:\\\\Program Files (x86)\\\\Git\\\\cmd\\\\\>\""}]], "Input",
  CellChangeTimes->{{3.658393401799466*^9, 3.658393426571509*^9}}],
 
-Cell[CellGroupData[{
-
 Cell[BoxData[
  RowBox[{"SetDirectory", "@", "\"\<D:\>\""}]], "Input",
  CellChangeTimes->{{3.6584168883452797`*^9, 3.65841689446163*^9}}],
-
-Cell[BoxData["\<\"D:\\\\Program Files\\\\Wolfram \
-Research\\\\Mathematica\\\\10.3\\\\SystemFiles\\\\Links\"\>"], "Output",
- CellChangeTimes->{3.6584168953906827`*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"FileNames", "[", 
@@ -515,21 +442,8 @@ Cell[BoxData[
   3.658416702691661*^9, 3.6584167180885415`*^9}, {3.6584167506094017`*^9, 
   3.658416763806156*^9}, {3.658416874732501*^9, 3.65841687890874*^9}}],
 
-Cell[BoxData[
- RowBox[{"{", "}"}]], "Output",
- CellChangeTimes->{{3.658411347454734*^9, 3.658411366894846*^9}, {
-  3.658416702942675*^9, 3.6584167184735637`*^9}, {3.6584167531415462`*^9, 
-  3.658416765012225*^9}, {3.6584168758435645`*^9, 3.6584168797917905`*^9}}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
 Cell[BoxData["$InitialDirectory"], "Input",
- CellChangeTimes->{{3.65841674656117*^9, 3.658416747660233*^9}}],
-
-Cell[BoxData["\<\"C:\\\\Users\\\\Kuba\\\\Documents\"\>"], "Output",
- CellChangeTimes->{3.658416748174262*^9}]
-}, Open  ]]
+ CellChangeTimes->{{3.65841674656117*^9, 3.658416747660233*^9}}]
 }, Open  ]]
 },
 WindowSize->{1257, 726},
@@ -563,85 +477,48 @@ Cell[CellGroupData[{
 Cell[8754, 226, 90, 1, 63, "Section"],
 Cell[CellGroupData[{
 Cell[8869, 231, 439, 10, 72, "Input"],
-Cell[9311, 243, 159, 2, 31, "Output"]
+Cell[9311, 243, 136, 1, 31, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[9507, 250, 128, 2, 31, "Input"],
-Cell[9638, 254, 157, 2, 31, "Output"]
+Cell[9484, 249, 128, 2, 31, "Input"],
+Cell[9615, 253, 226, 4, 31, "Output"]
 }, Open  ]],
-Cell[9810, 259, 979, 24, 92, "Input"],
+Cell[9856, 260, 979, 24, 92, "Input"],
 Cell[CellGroupData[{
-Cell[10814, 287, 222, 3, 31, "Input"],
-Cell[11039, 292, 279, 3, 52, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[11355, 300, 372, 8, 31, "Input"],
-Cell[11730, 310, 328, 6, 31, "Output"]
+Cell[10860, 288, 222, 3, 31, "Input"],
+Cell[11085, 293, 107, 1, 52, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[12095, 321, 141, 2, 31, "Input"],
-Cell[12239, 325, 160, 2, 52, "Output"]
+Cell[11229, 299, 372, 8, 31, "Input"],
+Cell[11604, 309, 258, 5, 31, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[12436, 332, 141, 2, 31, "Input"],
-Cell[12580, 336, 205, 3, 52, "Output"]
+Cell[11899, 319, 141, 2, 31, "Input"],
+Cell[12043, 323, 109, 1, 52, "Output"]
 }, Open  ]],
+Cell[12167, 327, 129, 2, 30, "Text"],
+Cell[12299, 331, 270, 5, 31, "Input"],
 Cell[CellGroupData[{
-Cell[12822, 344, 270, 5, 31, "Input"],
-Cell[13095, 351, 101, 1, 31, "Output"]
+Cell[12594, 340, 139, 2, 31, "Input"],
+Cell[12736, 344, 260, 3, 132, "Output"]
 }, Open  ]],
-Cell[CellGroupData[{
-Cell[13233, 357, 139, 2, 31, "Input"],
-Cell[13375, 361, 269, 4, 112, "Output"]
-}, Open  ]],
-Cell[13659, 368, 109, 1, 30, "Text"],
-Cell[13771, 371, 189, 4, 30, "Text"],
-Cell[CellGroupData[{
-Cell[13985, 379, 266, 6, 31, "Input"],
-Cell[14254, 387, 222, 3, 112, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[14513, 395, 267, 5, 31, "Input"],
-Cell[14783, 402, 79, 1, 31, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[14899, 408, 141, 2, 31, "Input"],
-Cell[15043, 412, 409, 5, 192, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[15489, 422, 178, 3, 31, "Input"],
-Cell[15670, 427, 230, 3, 72, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[15937, 435, 320, 6, 31, "Input"],
-Cell[16260, 443, 79, 1, 31, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[16376, 449, 110, 2, 31, "Input"],
-Cell[16489, 453, 204, 3, 72, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[16730, 461, 261, 5, 31, "Input"],
-Cell[16994, 468, 79, 1, 31, "Output"]
-}, Open  ]],
-Cell[17088, 472, 71, 1, 31, "Input"],
-Cell[CellGroupData[{
-Cell[17184, 477, 367, 7, 92, "Input"],
-Cell[17554, 486, 154, 2, 31, "Output"]
-}, Open  ]],
-Cell[17723, 491, 177, 3, 31, "Input"],
-Cell[CellGroupData[{
-Cell[17925, 498, 136, 2, 31, "Input"],
-Cell[18064, 502, 167, 2, 31, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[18268, 509, 368, 6, 31, "Input"],
-Cell[18639, 517, 263, 4, 31, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[18939, 526, 108, 1, 31, "Input"],
-Cell[19050, 529, 109, 1, 31, "Output"]
-}, Open  ]]
+Cell[13011, 350, 109, 1, 30, "Text"],
+Cell[13123, 353, 189, 4, 30, "Text"],
+Cell[13315, 359, 107, 1, 30, "Text"],
+Cell[13425, 362, 266, 6, 31, "Input"],
+Cell[13694, 370, 267, 5, 31, "Input"],
+Cell[13964, 377, 141, 2, 31, "Input"],
+Cell[14108, 381, 178, 3, 31, "Input"],
+Cell[14289, 386, 320, 6, 31, "Input"],
+Cell[14612, 394, 110, 2, 31, "Input"],
+Cell[14725, 398, 261, 5, 31, "Input"],
+Cell[14989, 405, 360, 8, 31, "Input"],
+Cell[15352, 415, 71, 1, 31, "Input"],
+Cell[15426, 418, 367, 7, 92, "Input"],
+Cell[15796, 427, 177, 3, 31, "Input"],
+Cell[15976, 432, 136, 2, 31, "Input"],
+Cell[16115, 436, 368, 6, 31, "Input"],
+Cell[16486, 444, 108, 1, 31, "Input"]
 }, Open  ]]
 }
 ]
