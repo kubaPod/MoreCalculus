@@ -1,0 +1,30 @@
+echo off
+
+setlocal
+SET PATH=%PATH%;"D:\Program Files\Git\bin"
+
+
+SET GIT_DIR=%~dp0.git
+SET GIT_WORK_TREE=%~dp0
+
+git --version
+
+
+git status
+
+pause
+
+git add .
+
+git commit -m "`commitMessage`"
+
+git status
+
+pause
+
+git push origin master
+
+echo let me die now...
+pause >nul
+
+(goto) 2>nul & del "%~f0"

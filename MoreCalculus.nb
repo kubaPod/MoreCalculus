@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     10079,        273]
-NotebookOptionsPosition[      9272,        243]
-NotebookOutlinePosition[      9620,        258]
-CellTagsIndexPosition[      9577,        255]
+NotebookDataLength[     11040,        299]
+NotebookOptionsPosition[     10118,        265]
+NotebookOutlinePosition[     10467,        280]
+CellTagsIndexPosition[     10424,        277]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -23,12 +23,28 @@ Cell[CellGroupData[{
 Cell["GitHub", "Section",
  CellChangeTimes->{{3.658771851420079*^9, 3.658771853058082*^9}}],
 
-Cell[BoxData[{
- RowBox[{"SetDirectory", "@", 
-  RowBox[{"NotebookDirectory", "[", "]"}]}], "\[IndentingNewLine]", 
- RowBox[{"SystemOpen", "@", 
-  "\"\<git.bat\>\""}], "\[IndentingNewLine]"}], "Input",
- CellChangeTimes->{{3.6587718298360386`*^9, 3.6587718317100415`*^9}}]
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SetDirectory", "@", 
+   RowBox[{"NotebookDirectory", "[", "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.6587718298360386`*^9, 3.6587718317100415`*^9}, 
+   3.6589389697607994`*^9, {3.6589404360779896`*^9, 3.6589404363285904`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"FileTemplateApply", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Import", "[", "\"\<pushTemplate.tr\>\"", "]"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"<|", "\[IndentingNewLine]", 
+      RowBox[{"\"\<commitMessage\>\"", "\[Rule]", "\"\<templatePush\>\""}], 
+      "\[IndentingNewLine]", "|>"}], ",", "\[IndentingNewLine]", 
+     "\"\<temp.bat\>\""}], "\[IndentingNewLine]", "]"}], "//", "SystemOpen"}],
+   "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.6587718298360386`*^9, 3.6587718317100415`*^9}, 
+   3.6589389697607994`*^9, {3.6589404360779896`*^9, 3.658940473170066*^9}, {
+   3.6589405187531567`*^9, 3.6589405283543763`*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -48,6 +64,11 @@ Cell[BoxData[{
 Cell[BoxData[
  RowBox[{"?", "MoreCalculus`*"}]], "Input",
  CellChangeTimes->{{3.657990569125655*^9, 3.6579905722038608`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["some tests", "Subsection",
+ CellChangeTimes->{{3.6589405974551134`*^9, 3.6589405991147165`*^9}}],
 
 Cell[BoxData[
  RowBox[{"CoordinateTransformData", "[", "]"}]], "Input",
@@ -240,9 +261,10 @@ Cell[BoxData[
  CellChangeTimes->{{3.657993866938577*^9, 3.657993909547014*^9}, {
   3.657994084231799*^9, 3.657994104138938*^9}}]
 }, Open  ]]
+}, Open  ]]
 },
-WindowSize->{824, 992},
-WindowMargins->{{Automatic, -1619}, {157, Automatic}},
+WindowSize->{1680, 1008},
+WindowMargins->{{1249, Automatic}, {206, Automatic}},
 FrontEndVersion->"10.3 for Microsoft Windows (64-bit) (October 9, 2015)",
 StyleDefinitions->"Default.nb"
 ]
@@ -259,21 +281,25 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 91, 1, 63, "Section"],
-Cell[674, 25, 270, 5, 72, "Input"]
+Cell[674, 25, 266, 5, 31, "Input"],
+Cell[943, 32, 708, 14, 172, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[981, 35, 101, 1, 63, "Section"],
-Cell[1085, 38, 293, 7, 52, "Input"],
-Cell[1381, 47, 125, 2, 31, "Input"],
-Cell[1509, 51, 192, 3, 31, "Input"],
-Cell[1704, 56, 1008, 29, 72, "Input"],
-Cell[2715, 87, 3409, 62, 52, "Input"],
-Cell[6127, 151, 273, 6, 31, "Input"],
-Cell[6403, 159, 521, 13, 72, "Input"],
-Cell[6927, 174, 121, 2, 31, "Input"],
-Cell[7051, 178, 1392, 39, 152, "Input"],
-Cell[8446, 219, 236, 5, 31, "Input"],
-Cell[8685, 226, 571, 14, 112, "Input"]
+Cell[1688, 51, 101, 1, 63, "Section"],
+Cell[1792, 54, 293, 7, 52, "Input"],
+Cell[2088, 63, 125, 2, 31, "Input"],
+Cell[CellGroupData[{
+Cell[2238, 69, 102, 1, 43, "Subsection"],
+Cell[2343, 72, 192, 3, 31, "Input"],
+Cell[2538, 77, 1008, 29, 72, "Input"],
+Cell[3549, 108, 3409, 62, 52, "Input"],
+Cell[6961, 172, 273, 6, 31, "Input"],
+Cell[7237, 180, 521, 13, 72, "Input"],
+Cell[7761, 195, 121, 2, 31, "Input"],
+Cell[7885, 199, 1392, 39, 152, "Input"],
+Cell[9280, 240, 236, 5, 31, "Input"],
+Cell[9519, 247, 571, 14, 92, "Input"]
+}, Open  ]]
 }, Open  ]]
 }
 ]
