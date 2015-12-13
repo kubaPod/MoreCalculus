@@ -1,13 +1,11 @@
 echo off
 
-setlocal
-SET PATH=%PATH%;"D:\Program Files\Git\bin"
 
+
+git --version
 
 SET GIT_DIR=%~dp0.git
 SET GIT_WORK_TREE=%~dp0
-
-git --version
 
 
 git status
