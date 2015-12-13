@@ -12,7 +12,8 @@ git --version
 
 git status
 
-pause
+echo will add. and commit now
+pause >nul
 
 git add .
 
@@ -20,7 +21,8 @@ git commit -m "`commitMessage`"
 
 git status
 
-pause
+echo will push now
+pause >nul
 
 git push origin master
 
