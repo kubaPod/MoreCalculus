@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    202317,       4764]
-NotebookOptionsPosition[    157317,       3839]
-NotebookOutlinePosition[    200573,       4707]
-CellTagsIndexPosition[    200530,       4704]
+NotebookDataLength[    201357,       4755]
+NotebookOptionsPosition[    156350,       3830]
+NotebookOutlinePosition[    199609,       4698]
+CellTagsIndexPosition[    199566,       4695]
 WindowTitle->MoreCalculusTests.nb
 WindowFrame->Normal*)
 
@@ -23,7 +23,7 @@ Notebook[{
 Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{
-  RowBox[{"MoreCalculus`dChange", "[", "\[IndentingNewLine]", 
+  RowBox[{"MoreCalculus`DChange", "[", "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{
      RowBox[{
@@ -59,8 +59,8 @@ Cell[BoxData[
      "collected", " ", "result", " ", "was", " ", "giving", " ", "failed", 
      " ", "test"}], "..."}], " ", "*)"}]}]], "VerificationTest",
  CellChangeTimes->{{3.657991276517149*^9, 3.657991297886587*^9}, {
-  3.6583911441644373`*^9, 3.658391171976486*^9}, {3.658391363602352*^9, 
-  3.6583914567725773`*^9}},
+   3.6583911441644373`*^9, 3.658391171976486*^9}, {3.658391363602352*^9, 
+   3.6583914567725773`*^9}, 3.6646460475833225`*^9},
  CellID->201052083],
 
 Cell[BoxData[
@@ -429,7 +429,7 @@ Function[Short[Slot[1], Rational[2, 3]]]]\)",
     GridBoxItemSize->{"Columns" -> {{All}}, "Rows" -> {{All}}}],
    "Grid"],
   ImageSize->Full]], "TestSuccess",
- CellID->119515544],
+ CellID->630412589],
 
 Cell[BoxData[
  PaneBox[
@@ -708,13 +708,13 @@ Cell[BoxData[
     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
    "Grid"],
   ImageSize->Full]], "BottomCell",
- CellID->45025899]
+ CellID->381896421]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"MoreCalculus`dChange", "[", "\[IndentingNewLine]", 
+ RowBox[{"MoreCalculus`DChange", "[", "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
     RowBox[{
@@ -749,7 +749,7 @@ Cell[BoxData[
   "]"}]], "VerificationTest",
  CellChangeTimes->{
   3.657991152242714*^9, {3.657991248780697*^9, 3.657991249498298*^9}, {
-   3.6579916490046606`*^9, 3.6579916490202603`*^9}},
+   3.6579916490046606`*^9, 3.6579916490202603`*^9}, 3.6646460476145225`*^9},
  CellID->774191578],
 
 Cell[BoxData[
@@ -979,10 +979,10 @@ Derivative], Rule[MultilineFunction, None]], \"[\", RowBox[{\"r\", \",\", \"a\
             GraphicsColor->RGBColor[0.458824, 0.458824, 0.458824],
             FontColor->RGBColor[0.458824, 0.458824, 0.458824]], 
            
-           StyleBox["\<\"\\!\\(\\*TagBox[TemplateBox[List[\\\"0.\
-015999999999998238`\\\", \\\"\\\\\\\"s\\\\\\\"\\\", \\\"s\\\", \
-\\\"\\\\\\\"Seconds\\\\\\\"\\\"], \\\"Quantity\\\", Rule[SyntaxForm, Mod]], \
-Function[Short[Slot[1], Rational[2, 3]]]]\\)\"\>",
+           StyleBox["\<\"\\!\\(\\*TagBox[TemplateBox[List[\\\"0.`\\\", \\\"\\\
+\\\\\"s\\\\\\\"\\\", \\\"s\\\", \\\"\\\\\\\"Seconds\\\\\\\"\\\"], \
+\\\"Quantity\\\", Rule[SyntaxForm, Mod]], Function[Short[Slot[1], Rational[2, \
+3]]]]\\)\"\>",
             StripOnInput->False,
             LineColor->RGBColor[0.14902, 0.14902, 0.14902],
             FrontFaceColor->RGBColor[0.14902, 0.14902, 0.14902],
@@ -1004,8 +1004,8 @@ Function[Short[Slot[1], Rational[2, 3]]]]\\)\"\>",
              "MUnitStrings", "CPUTimeUsed-Detail"]]], 
            RGBColor[0.458824, 0.458824, 0.458824]], 
           Style[
-          "\!\(\*TagBox[TemplateBox[List[\"0.015999999999998238`\", \"\\\"s\\\
-\"\", \"s\", \"\\\"Seconds\\\"\"], \"Quantity\", Rule[SyntaxForm, Mod]], \
+          "\!\(\*TagBox[TemplateBox[List[\"0.`\", \"\\\"s\\\"\", \"s\", \
+\"\\\"Seconds\\\"\"], \"Quantity\", Rule[SyntaxForm, Mod]], \
 Function[Short[Slot[1], Rational[2, 3]]]]\)", 
            RGBColor[0.14902, 0.14902, 0.14902]]}}, 
         BaseStyle -> {FontFamily -> "Helvetica", FontWeight -> "Bold"}, 
@@ -1017,7 +1017,7 @@ Function[Short[Slot[1], Rational[2, 3]]]]\)",
     GridBoxItemSize->{"Columns" -> {{All}}, "Rows" -> {{All}}}],
    "Grid"],
   ImageSize->Full]], "TestSuccess",
- CellID->27654980],
+ CellID->130691071],
 
 Cell[BoxData[
  PaneBox[
@@ -1296,13 +1296,13 @@ Cell[BoxData[
     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
    "Grid"],
   ImageSize->Full]], "BottomCell",
- CellID->438755595]
+ CellID->175645781]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"MoreCalculus`dChange", "[", "\[IndentingNewLine]", 
+ RowBox[{"MoreCalculus`DChange", "[", "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
     RowBox[{
@@ -1322,7 +1322,7 @@ Cell[BoxData[
    RowBox[{"u", "[", 
     RowBox[{"x", ",", " ", "t"}], "]"}]}], "]"}]], "VerificationTest",
  CellChangeTimes->{{3.657991580272125*^9, 3.6579915871455383`*^9}, {
-  3.657991626815813*^9, 3.657991642926249*^9}},
+   3.657991626815813*^9, 3.657991642926249*^9}, 3.6646460476145225`*^9},
  CellID->637559744],
 
 Cell[BoxData[
@@ -1486,15 +1486,13 @@ Function[Short[Slot[1], Rational[2, 3]]]]\\)\"\>",
 \"\[Xi]\\\", \\\",\\\", \\\"t\\\"}], \\\"]\\\"}], \\\"\[Equal]\\\", \
 FractionBox[RowBox[{RowBox[{\\\"\[Xi]\\\", \\\" \\\", RowBox[{\\\"s\\\", \
 \\\"[\\\", \\\"t\\\", \\\"]\\\"}], \\\" \\\", \
-RowBox[{SuperscriptBox[\\\"s\\\", \\\"\[Prime]\\\", Rule[MultilineFunction, \
-None]], \\\"[\\\", \\\"t\\\", \\\"]\\\"}], \\\" \\\", RowBox[{SuperscriptBox[\
-\\\"u\\\", TagBox[RowBox[{\\\"(\\\", RowBox[{\\\"1\\\", \\\",\\\", \
-\\\"0\\\"}], \\\")\\\"}], Derivative], Rule[MultilineFunction, None]], \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\" \
+\\\", RowBox[{SuperscriptBox[\\\"u\\\", \
+TagBox[RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \
+\\\"\[RightSkeleton]\\\"}], Derivative], Rule[MultilineFunction, None]], \
 \\\"[\\\", RowBox[{\\\"\[Xi]\\\", \\\",\\\", \\\"t\\\"}], \\\"]\\\"}]}], \
-\\\"+\\\", RowBox[{SuperscriptBox[\\\"u\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
-\\\"1\\\", \\\"\[RightSkeleton]\\\"}], Rule[MultilineFunction, None]], \
-\\\"[\\\", RowBox[{\\\"\[Xi]\\\", \\\",\\\", \\\"t\\\"}], \\\"]\\\"}]}], \
-SuperscriptBox[RowBox[{\\\"s\\\", \\\"[\\\", \\\"t\\\", \\\"]\\\"}], \
+\\\"+\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\
+\"}]}], SuperscriptBox[RowBox[{\\\"s\\\", \\\"[\\\", \\\"t\\\", \\\"]\\\"}], \
 \\\"2\\\"]]}], Function[Short[Slot[1], Rational[2, 3]]]]\\)\"\>",
             StripOnInput->False,
             LineColor->RGBColor[0.14902, 0.14902, 0.14902],
@@ -1521,14 +1519,12 @@ SuperscriptBox[RowBox[{\\\"s\\\", \\\"[\\\", \\\"t\\\", \\\"]\\\"}], \
 \"(\", RowBox[{\"0\", \",\", \"1\"}], \")\"}], Derivative], \
 Rule[MultilineFunction, None]], \"[\", RowBox[{\"\[Xi]\", \",\", \"t\"}], \"]\
 \"}], \"\[Equal]\", FractionBox[RowBox[{RowBox[{\"\[Xi]\", \" \", RowBox[{\"s\
-\", \"[\", \"t\", \"]\"}], \" \", RowBox[{SuperscriptBox[\"s\", \"\[Prime]\", \
-Rule[MultilineFunction, None]], \"[\", \"t\", \"]\"}], \" \", \
-RowBox[{SuperscriptBox[\"u\", TagBox[RowBox[{\"(\", RowBox[{\"1\", \",\", \"0\
-\"}], \")\"}], Derivative], Rule[MultilineFunction, None]], \"[\", RowBox[{\"\
-\[Xi]\", \",\", \"t\"}], \"]\"}]}], \"+\", RowBox[{SuperscriptBox[\"u\", \
-RowBox[{\"\[LeftSkeleton]\", \"1\", \"\[RightSkeleton]\"}], \
+\", \"[\", \"t\", \"]\"}], \" \", RowBox[{\"\[LeftSkeleton]\", \"1\", \"\
+\[RightSkeleton]\"}], \" \", RowBox[{SuperscriptBox[\"u\", TagBox[RowBox[{\"\
+\[LeftSkeleton]\", \"1\", \"\[RightSkeleton]\"}], Derivative], \
 Rule[MultilineFunction, None]], \"[\", RowBox[{\"\[Xi]\", \",\", \"t\"}], \"]\
-\"}]}], SuperscriptBox[RowBox[{\"s\", \"[\", \"t\", \"]\"}], \"2\"]]}], \
+\"}]}], \"+\", RowBox[{\"\[LeftSkeleton]\", \"1\", \"\[RightSkeleton]\"}]}], \
+SuperscriptBox[RowBox[{\"s\", \"[\", \"t\", \"]\"}], \"2\"]]}], \
 Function[Short[Slot[1], Rational[2, 3]]]]\)", 
            RGBColor[0.14902, 0.14902, 0.14902]]}}, 
         BaseStyle -> {FontFamily -> "Helvetica", FontWeight -> "Bold"}, 
@@ -1552,15 +1548,13 @@ Function[Short[Slot[1], Rational[2, 3]]]]\)",
 \"\[Xi]\\\", \\\",\\\", \\\"t\\\"}], \\\"]\\\"}], \\\"\[Equal]\\\", \
 FractionBox[RowBox[{RowBox[{\\\"\[Xi]\\\", \\\" \\\", RowBox[{\\\"s\\\", \
 \\\"[\\\", \\\"t\\\", \\\"]\\\"}], \\\" \\\", \
-RowBox[{SuperscriptBox[\\\"s\\\", \\\"\[Prime]\\\", Rule[MultilineFunction, \
-None]], \\\"[\\\", \\\"t\\\", \\\"]\\\"}], \\\" \\\", RowBox[{SuperscriptBox[\
-\\\"u\\\", TagBox[RowBox[{\\\"(\\\", RowBox[{\\\"1\\\", \\\",\\\", \
-\\\"0\\\"}], \\\")\\\"}], Derivative], Rule[MultilineFunction, None]], \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\" \
+\\\", RowBox[{SuperscriptBox[\\\"u\\\", \
+TagBox[RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \
+\\\"\[RightSkeleton]\\\"}], Derivative], Rule[MultilineFunction, None]], \
 \\\"[\\\", RowBox[{\\\"\[Xi]\\\", \\\",\\\", \\\"t\\\"}], \\\"]\\\"}]}], \
-\\\"+\\\", RowBox[{SuperscriptBox[\\\"u\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
-\\\"1\\\", \\\"\[RightSkeleton]\\\"}], Rule[MultilineFunction, None]], \
-\\\"[\\\", RowBox[{\\\"\[Xi]\\\", \\\",\\\", \\\"t\\\"}], \\\"]\\\"}]}], \
-SuperscriptBox[RowBox[{\\\"s\\\", \\\"[\\\", \\\"t\\\", \\\"]\\\"}], \
+\\\"+\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\
+\"}]}], SuperscriptBox[RowBox[{\\\"s\\\", \\\"[\\\", \\\"t\\\", \\\"]\\\"}], \
 \\\"2\\\"]]}], Function[Short[Slot[1], Rational[2, 3]]]]\\)\"\>",
             StripOnInput->False,
             LineColor->RGBColor[0.14902, 0.14902, 0.14902],
@@ -1587,14 +1581,12 @@ SuperscriptBox[RowBox[{\\\"s\\\", \\\"[\\\", \\\"t\\\", \\\"]\\\"}], \
 \"(\", RowBox[{\"0\", \",\", \"1\"}], \")\"}], Derivative], \
 Rule[MultilineFunction, None]], \"[\", RowBox[{\"\[Xi]\", \",\", \"t\"}], \"]\
 \"}], \"\[Equal]\", FractionBox[RowBox[{RowBox[{\"\[Xi]\", \" \", RowBox[{\"s\
-\", \"[\", \"t\", \"]\"}], \" \", RowBox[{SuperscriptBox[\"s\", \"\[Prime]\", \
-Rule[MultilineFunction, None]], \"[\", \"t\", \"]\"}], \" \", \
-RowBox[{SuperscriptBox[\"u\", TagBox[RowBox[{\"(\", RowBox[{\"1\", \",\", \"0\
-\"}], \")\"}], Derivative], Rule[MultilineFunction, None]], \"[\", RowBox[{\"\
-\[Xi]\", \",\", \"t\"}], \"]\"}]}], \"+\", RowBox[{SuperscriptBox[\"u\", \
-RowBox[{\"\[LeftSkeleton]\", \"1\", \"\[RightSkeleton]\"}], \
+\", \"[\", \"t\", \"]\"}], \" \", RowBox[{\"\[LeftSkeleton]\", \"1\", \"\
+\[RightSkeleton]\"}], \" \", RowBox[{SuperscriptBox[\"u\", TagBox[RowBox[{\"\
+\[LeftSkeleton]\", \"1\", \"\[RightSkeleton]\"}], Derivative], \
 Rule[MultilineFunction, None]], \"[\", RowBox[{\"\[Xi]\", \",\", \"t\"}], \"]\
-\"}]}], SuperscriptBox[RowBox[{\"s\", \"[\", \"t\", \"]\"}], \"2\"]]}], \
+\"}]}], \"+\", RowBox[{\"\[LeftSkeleton]\", \"1\", \"\[RightSkeleton]\"}]}], \
+SuperscriptBox[RowBox[{\"s\", \"[\", \"t\", \"]\"}], \"2\"]]}], \
 Function[Short[Slot[1], Rational[2, 3]]]]\)", 
            RGBColor[0.14902, 0.14902, 0.14902]]}}, 
         BaseStyle -> {FontFamily -> "Helvetica", FontWeight -> "Bold"}, 
@@ -1613,7 +1605,7 @@ Function[Short[Slot[1], Rational[2, 3]]]]\)",
             FontColor->RGBColor[0.458824, 0.458824, 0.458824]], 
            
            StyleBox["\<\"\\!\\(\\*TagBox[TemplateBox[List[\\\"0.\
-015999999999998238`\\\", \\\"\\\\\\\"s\\\\\\\"\\\", \\\"s\\\", \
+01499999999999968`\\\", \\\"\\\\\\\"s\\\\\\\"\\\", \\\"s\\\", \
 \\\"\\\\\\\"Seconds\\\\\\\"\\\"], \\\"Quantity\\\", Rule[SyntaxForm, Mod]], \
 Function[Short[Slot[1], Rational[2, 3]]]]\\)\"\>",
             StripOnInput->False,
@@ -1637,9 +1629,9 @@ Function[Short[Slot[1], Rational[2, 3]]]]\\)\"\>",
              "MUnitStrings", "CPUTimeUsed-Detail"]]], 
            RGBColor[0.458824, 0.458824, 0.458824]], 
           Style[
-          "\!\(\*TagBox[TemplateBox[List[\"0.015999999999998238`\", \"\\\"s\\\
-\"\", \"s\", \"\\\"Seconds\\\"\"], \"Quantity\", Rule[SyntaxForm, Mod]], \
-Function[Short[Slot[1], Rational[2, 3]]]]\)", 
+          "\!\(\*TagBox[TemplateBox[List[\"0.01499999999999968`\", \
+\"\\\"s\\\"\", \"s\", \"\\\"Seconds\\\"\"], \"Quantity\", Rule[SyntaxForm, \
+Mod]], Function[Short[Slot[1], Rational[2, 3]]]]\)", 
            RGBColor[0.14902, 0.14902, 0.14902]]}}, 
         BaseStyle -> {FontFamily -> "Helvetica", FontWeight -> "Bold"}, 
         Spacings -> {{2 -> 0.5}, Automatic}]},
@@ -1650,7 +1642,7 @@ Function[Short[Slot[1], Rational[2, 3]]]]\)",
     GridBoxItemSize->{"Columns" -> {{All}}, "Rows" -> {{All}}}],
    "Grid"],
   ImageSize->Full]], "TestSuccess",
- CellID->471099913],
+ CellID->166844808],
 
 Cell[BoxData[
  PaneBox[
@@ -1929,13 +1921,13 @@ Cell[BoxData[
     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
    "Grid"],
   ImageSize->Full]], "BottomCell",
- CellID->314055124]
+ CellID->116146577]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"MoreCalculus`dChange", "[", "\[IndentingNewLine]", 
+ RowBox[{"MoreCalculus`DChange", "[", "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
     RowBox[{
@@ -1972,7 +1964,8 @@ Cell[BoxData[
     RowBox[{"y", "[", 
      RowBox[{"i", ",", "t"}], "]"}], "}"}]}], "\[IndentingNewLine]", 
   "]"}]], "VerificationTest",
- CellChangeTimes->{{3.6579916209978004`*^9, 3.65799162494381*^9}},
+ CellChangeTimes->{{3.6579916209978004`*^9, 3.65799162494381*^9}, 
+   3.6646460476145225`*^9},
  CellID->28004484],
 
 Cell[BoxData[
@@ -2124,10 +2117,9 @@ Function[Short[Slot[1], Rational[2, 3]]]]\\)\"\>",
 SuperscriptBox[\\\"\[ExponentialE]\\\", RowBox[{RowBox[{\\\"-\\\", \
 SuperscriptBox[RowBox[{\\\"(\\\", RowBox[{RowBox[{\\\"-\\\", \\\"1\\\"}], \
 \\\"+\\\", \\\"\[Eta]\\\"}], \\\")\\\"}], \\\"2\\\"]}], \\\"-\\\", \
-SuperscriptBox[RowBox[{\\\"(\\\", RowBox[{\\\"5\\\", \\\"+\\\", RowBox[{\\\"\
-\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"-\\\", \
-RowBox[{\\\"2\\\", \\\" \\\", \\\"\[Xi]\\\"}]}], \\\")\\\"}], \
-\\\"2\\\"]}]]}], Function[Short[Slot[1], Rational[2, 3]]]]\\)\"\>",
+SuperscriptBox[RowBox[{\\\"(\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \
+\\\"\[RightSkeleton]\\\"}], \\\")\\\"}], \\\"2\\\"]}]]}], \
+Function[Short[Slot[1], Rational[2, 3]]]]\\)\"\>",
             StripOnInput->False,
             LineColor->RGBColor[0.14902, 0.14902, 0.14902],
             FrontFaceColor->RGBColor[0.14902, 0.14902, 0.14902],
@@ -2155,10 +2147,9 @@ Rule[MultilineFunction, None]], \"[\", RowBox[{\"\[Xi]\", \",\", \
 \"\[Eta]\"}], \"]\"}], \"\[Equal]\", SuperscriptBox[\"\[ExponentialE]\", \
 RowBox[{RowBox[{\"-\", SuperscriptBox[RowBox[{\"(\", RowBox[{RowBox[{\"-\", \
 \"1\"}], \"+\", \"\[Eta]\"}], \")\"}], \"2\"]}], \"-\", \
-SuperscriptBox[RowBox[{\"(\", RowBox[{\"5\", \"+\", RowBox[{\"\[LeftSkeleton]\
-\", \"1\", \"\[RightSkeleton]\"}], \"-\", RowBox[{\"2\", \" \", \
-\"\[Xi]\"}]}], \")\"}], \"2\"]}]]}], Function[Short[Slot[1], Rational[2, \
-3]]]]\)", 
+SuperscriptBox[RowBox[{\"(\", RowBox[{\"\[LeftSkeleton]\", \"1\", \"\
+\[RightSkeleton]\"}], \")\"}], \"2\"]}]]}], Function[Short[Slot[1], \
+Rational[2, 3]]]]\)", 
            RGBColor[0.14902, 0.14902, 0.14902]]}}, 
         BaseStyle -> {FontFamily -> "Helvetica", FontWeight -> "Bold"}, 
         Spacings -> {{2 -> 0.5}, Automatic}], 
@@ -2182,10 +2173,9 @@ SuperscriptBox[RowBox[{\"(\", RowBox[{\"5\", \"+\", RowBox[{\"\[LeftSkeleton]\
 SuperscriptBox[\\\"\[ExponentialE]\\\", RowBox[{RowBox[{\\\"-\\\", \
 SuperscriptBox[RowBox[{\\\"(\\\", RowBox[{RowBox[{\\\"-\\\", \\\"1\\\"}], \
 \\\"+\\\", \\\"\[Eta]\\\"}], \\\")\\\"}], \\\"2\\\"]}], \\\"-\\\", \
-SuperscriptBox[RowBox[{\\\"(\\\", RowBox[{\\\"5\\\", \\\"+\\\", RowBox[{\\\"\
-\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"-\\\", \
-RowBox[{\\\"2\\\", \\\" \\\", \\\"\[Xi]\\\"}]}], \\\")\\\"}], \
-\\\"2\\\"]}]]}], Function[Short[Slot[1], Rational[2, 3]]]]\\)\"\>",
+SuperscriptBox[RowBox[{\\\"(\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \
+\\\"\[RightSkeleton]\\\"}], \\\")\\\"}], \\\"2\\\"]}]]}], \
+Function[Short[Slot[1], Rational[2, 3]]]]\\)\"\>",
             StripOnInput->False,
             LineColor->RGBColor[0.14902, 0.14902, 0.14902],
             FrontFaceColor->RGBColor[0.14902, 0.14902, 0.14902],
@@ -2213,10 +2203,9 @@ Rule[MultilineFunction, None]], \"[\", RowBox[{\"\[Xi]\", \",\", \
 \"\[Eta]\"}], \"]\"}], \"\[Equal]\", SuperscriptBox[\"\[ExponentialE]\", \
 RowBox[{RowBox[{\"-\", SuperscriptBox[RowBox[{\"(\", RowBox[{RowBox[{\"-\", \
 \"1\"}], \"+\", \"\[Eta]\"}], \")\"}], \"2\"]}], \"-\", \
-SuperscriptBox[RowBox[{\"(\", RowBox[{\"5\", \"+\", RowBox[{\"\[LeftSkeleton]\
-\", \"1\", \"\[RightSkeleton]\"}], \"-\", RowBox[{\"2\", \" \", \
-\"\[Xi]\"}]}], \")\"}], \"2\"]}]]}], Function[Short[Slot[1], Rational[2, \
-3]]]]\)", 
+SuperscriptBox[RowBox[{\"(\", RowBox[{\"\[LeftSkeleton]\", \"1\", \"\
+\[RightSkeleton]\"}], \")\"}], \"2\"]}]]}], Function[Short[Slot[1], \
+Rational[2, 3]]]]\)", 
            RGBColor[0.14902, 0.14902, 0.14902]]}}, 
         BaseStyle -> {FontFamily -> "Helvetica", FontWeight -> "Bold"}, 
         Spacings -> {{2 -> 0.5}, Automatic}], 
@@ -2271,7 +2260,7 @@ Function[Short[Slot[1], Rational[2, 3]]]]\)",
     GridBoxItemSize->{"Columns" -> {{All}}, "Rows" -> {{All}}}],
    "Grid"],
   ImageSize->Full]], "TestSuccess",
- CellID->231359512],
+ CellID->573798378],
 
 Cell[BoxData[
  PaneBox[
@@ -2550,13 +2539,13 @@ Cell[BoxData[
     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
    "Grid"],
   ImageSize->Full]], "BottomCell",
- CellID->419377549]
+ CellID->69322084]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"MoreCalculus`dChange", "[", "\[IndentingNewLine]", 
+ RowBox[{"MoreCalculus`DChange", "[", "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
     RowBox[{
@@ -2594,7 +2583,8 @@ Cell[BoxData[
     RowBox[{"u", "[", 
      RowBox[{"x", ",", "y"}], "]"}], "}"}]}], "\[IndentingNewLine]", 
   "]"}]], "VerificationTest",
- CellChangeTimes->{{3.657991884810093*^9, 3.6579918908945093`*^9}},
+ CellChangeTimes->{{3.657991884810093*^9, 3.6579918908945093`*^9}, 
+   3.664646047630122*^9},
  CellID->360980442],
 
 Cell[BoxData[
@@ -2851,10 +2841,10 @@ Function[Short[Slot[1], Rational[2, 3]]]]\)",
             GraphicsColor->RGBColor[0.458824, 0.458824, 0.458824],
             FontColor->RGBColor[0.458824, 0.458824, 0.458824]], 
            
-           StyleBox["\<\"\\!\\(\\*TagBox[TemplateBox[List[\\\"0.\
-030999999999998806`\\\", \\\"\\\\\\\"s\\\\\\\"\\\", \\\"s\\\", \
-\\\"\\\\\\\"Seconds\\\\\\\"\\\"], \\\"Quantity\\\", Rule[SyntaxForm, Mod]], \
-Function[Short[Slot[1], Rational[2, 3]]]]\\)\"\>",
+           StyleBox["\<\"\\!\\(\\*TagBox[TemplateBox[List[\\\"0.`\\\", \\\"\\\
+\\\\\"s\\\\\\\"\\\", \\\"s\\\", \\\"\\\\\\\"Seconds\\\\\\\"\\\"], \
+\\\"Quantity\\\", Rule[SyntaxForm, Mod]], Function[Short[Slot[1], Rational[2, \
+3]]]]\\)\"\>",
             StripOnInput->False,
             LineColor->RGBColor[0.14902, 0.14902, 0.14902],
             FrontFaceColor->RGBColor[0.14902, 0.14902, 0.14902],
@@ -2876,8 +2866,8 @@ Function[Short[Slot[1], Rational[2, 3]]]]\\)\"\>",
              "MUnitStrings", "CPUTimeUsed-Detail"]]], 
            RGBColor[0.458824, 0.458824, 0.458824]], 
           Style[
-          "\!\(\*TagBox[TemplateBox[List[\"0.030999999999998806`\", \"\\\"s\\\
-\"\", \"s\", \"\\\"Seconds\\\"\"], \"Quantity\", Rule[SyntaxForm, Mod]], \
+          "\!\(\*TagBox[TemplateBox[List[\"0.`\", \"\\\"s\\\"\", \"s\", \
+\"\\\"Seconds\\\"\"], \"Quantity\", Rule[SyntaxForm, Mod]], \
 Function[Short[Slot[1], Rational[2, 3]]]]\)", 
            RGBColor[0.14902, 0.14902, 0.14902]]}}, 
         BaseStyle -> {FontFamily -> "Helvetica", FontWeight -> "Bold"}, 
@@ -2889,7 +2879,7 @@ Function[Short[Slot[1], Rational[2, 3]]]]\)",
     GridBoxItemSize->{"Columns" -> {{All}}, "Rows" -> {{All}}}],
    "Grid"],
   ImageSize->Full]], "TestSuccess",
- CellID->33748312],
+ CellID->27485216],
 
 Cell[BoxData[
  PaneBox[
@@ -3168,7 +3158,7 @@ Cell[BoxData[
     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
    "Grid"],
   ImageSize->Full]], "BottomCell",
- CellID->5707875]
+ CellID->266145291]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -3182,7 +3172,7 @@ Cell[BoxData[
      RowBox[{
       RowBox[{"-", "Pi"}], "<", "\[Theta]", "<", "Pi"}]}], "}"}], ",", 
    "\[IndentingNewLine]", 
-   RowBox[{"MoreCalculus`dChange", "[", "\[IndentingNewLine]", 
+   RowBox[{"MoreCalculus`DChange", "[", "\[IndentingNewLine]", 
     RowBox[{
      RowBox[{
       RowBox[{
@@ -3204,7 +3194,8 @@ Cell[BoxData[
      RowBox[{"f", "[", 
       RowBox[{"x", ",", "y"}], "]"}]}], "\[IndentingNewLine]", "]"}]}], 
   "]"}]], "VerificationTest",
- CellChangeTimes->{{3.657995480270934*^9, 3.6579955101140146`*^9}},
+ CellChangeTimes->{{3.657995480270934*^9, 3.6579955101140146`*^9}, 
+   3.664646047630122*^9},
  CellID->40379470],
 
 Cell[BoxData[
@@ -3388,8 +3379,8 @@ Rule[MultilineFunction, None]], \\\"[\\\", RowBox[{\\\"r\\\", \\\",\\\", \\\"\
 \\\"0\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"r\\\", \\\"\
 \[Equal]\\\", SqrtBox[RowBox[{SuperscriptBox[\\\"x\\\", \\\"2\\\"], \
 \\\"+\\\", SuperscriptBox[\\\"y\\\", \\\"2\\\"]}]]}], \\\",\\\", RowBox[{\\\"\
-\[Theta]\\\", \\\"\[Equal]\\\", RowBox[{\\\"ArcTan\\\", \\\"[\\\", RowBox[{\\\
-\"x\\\", \\\",\\\", \\\"y\\\"}], \\\"]\\\"}]}]}], \\\"}\\\"}]}], \\\"}\\\"}], \
+\[Theta]\\\", \\\"\[Equal]\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \
+\\\"\[RightSkeleton]\\\"}]}]}], \\\"}\\\"}]}], \\\"}\\\"}], \
 Function[Short[Slot[1], Rational[2, 3]]]]\\)\"\>",
             StripOnInput->False,
             LineColor->RGBColor[0.14902, 0.14902, 0.14902],
@@ -3425,8 +3416,8 @@ Rule[MultilineFunction, None]], \"[\", RowBox[{\"r\", \",\", \"\[Theta]\"}], \
 \"]\"}]}]}], \")\"}]}]}], \"\[Equal]\", \"0\"}], \",\", RowBox[{\"{\", \
 RowBox[{RowBox[{\"r\", \"\[Equal]\", SqrtBox[RowBox[{SuperscriptBox[\"x\", \
 \"2\"], \"+\", SuperscriptBox[\"y\", \"2\"]}]]}], \",\", \
-RowBox[{\"\[Theta]\", \"\[Equal]\", RowBox[{\"ArcTan\", \"[\", RowBox[{\"x\", \
-\",\", \"y\"}], \"]\"}]}]}], \"}\"}]}], \"}\"}], Function[Short[Slot[1], \
+RowBox[{\"\[Theta]\", \"\[Equal]\", RowBox[{\"\[LeftSkeleton]\", \"1\", \"\
+\[RightSkeleton]\"}]}]}], \"}\"}]}], \"}\"}], Function[Short[Slot[1], \
 Rational[2, 3]]]]\)", 
            RGBColor[0.14902, 0.14902, 0.14902]]}}, 
         BaseStyle -> {FontFamily -> "Helvetica", FontWeight -> "Bold"}, 
@@ -3461,8 +3452,8 @@ Rule[MultilineFunction, None]], \\\"[\\\", RowBox[{\\\"r\\\", \\\",\\\", \\\"\
 \\\"0\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"r\\\", \\\"\
 \[Equal]\\\", SqrtBox[RowBox[{SuperscriptBox[\\\"x\\\", \\\"2\\\"], \
 \\\"+\\\", SuperscriptBox[\\\"y\\\", \\\"2\\\"]}]]}], \\\",\\\", RowBox[{\\\"\
-\[Theta]\\\", \\\"\[Equal]\\\", RowBox[{\\\"ArcTan\\\", \\\"[\\\", RowBox[{\\\
-\"x\\\", \\\",\\\", \\\"y\\\"}], \\\"]\\\"}]}]}], \\\"}\\\"}]}], \\\"}\\\"}], \
+\[Theta]\\\", \\\"\[Equal]\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \
+\\\"\[RightSkeleton]\\\"}]}]}], \\\"}\\\"}]}], \\\"}\\\"}], \
 Function[Short[Slot[1], Rational[2, 3]]]]\\)\"\>",
             StripOnInput->False,
             LineColor->RGBColor[0.14902, 0.14902, 0.14902],
@@ -3498,8 +3489,8 @@ Rule[MultilineFunction, None]], \"[\", RowBox[{\"r\", \",\", \"\[Theta]\"}], \
 \"]\"}]}]}], \")\"}]}]}], \"\[Equal]\", \"0\"}], \",\", RowBox[{\"{\", \
 RowBox[{RowBox[{\"r\", \"\[Equal]\", SqrtBox[RowBox[{SuperscriptBox[\"x\", \
 \"2\"], \"+\", SuperscriptBox[\"y\", \"2\"]}]]}], \",\", \
-RowBox[{\"\[Theta]\", \"\[Equal]\", RowBox[{\"ArcTan\", \"[\", RowBox[{\"x\", \
-\",\", \"y\"}], \"]\"}]}]}], \"}\"}]}], \"}\"}], Function[Short[Slot[1], \
+RowBox[{\"\[Theta]\", \"\[Equal]\", RowBox[{\"\[LeftSkeleton]\", \"1\", \"\
+\[RightSkeleton]\"}]}]}], \"}\"}]}], \"}\"}], Function[Short[Slot[1], \
 Rational[2, 3]]]]\)", 
            RGBColor[0.14902, 0.14902, 0.14902]]}}, 
         BaseStyle -> {FontFamily -> "Helvetica", FontWeight -> "Bold"}, 
@@ -3518,7 +3509,7 @@ Rational[2, 3]]]]\)",
             FontColor->RGBColor[0.458824, 0.458824, 0.458824]], 
            
            StyleBox["\<\"\\!\\(\\*TagBox[TemplateBox[List[\\\"0.\
-0470000000000006`\\\", \\\"\\\\\\\"s\\\\\\\"\\\", \\\"s\\\", \
+015000000000000568`\\\", \\\"\\\\\\\"s\\\\\\\"\\\", \\\"s\\\", \
 \\\"\\\\\\\"Seconds\\\\\\\"\\\"], \\\"Quantity\\\", Rule[SyntaxForm, Mod]], \
 Function[Short[Slot[1], Rational[2, 3]]]]\\)\"\>",
             StripOnInput->False,
@@ -3542,8 +3533,8 @@ Function[Short[Slot[1], Rational[2, 3]]]]\\)\"\>",
              "MUnitStrings", "CPUTimeUsed-Detail"]]], 
            RGBColor[0.458824, 0.458824, 0.458824]], 
           Style[
-          "\!\(\*TagBox[TemplateBox[List[\"0.0470000000000006`\", \"\\\"s\\\"\
-\", \"s\", \"\\\"Seconds\\\"\"], \"Quantity\", Rule[SyntaxForm, Mod]], \
+          "\!\(\*TagBox[TemplateBox[List[\"0.015000000000000568`\", \"\\\"s\\\
+\"\", \"s\", \"\\\"Seconds\\\"\"], \"Quantity\", Rule[SyntaxForm, Mod]], \
 Function[Short[Slot[1], Rational[2, 3]]]]\)", 
            RGBColor[0.14902, 0.14902, 0.14902]]}}, 
         BaseStyle -> {FontFamily -> "Helvetica", FontWeight -> "Bold"}, 
@@ -3555,7 +3546,7 @@ Function[Short[Slot[1], Rational[2, 3]]]]\)",
     GridBoxItemSize->{"Columns" -> {{All}}, "Rows" -> {{All}}}],
    "Grid"],
   ImageSize->Full]], "TestSuccess",
- CellID->322337029],
+ CellID->243936789],
 
 Cell[BoxData[
  PaneBox[
@@ -3834,11 +3825,11 @@ Cell[BoxData[
     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
    "Grid"],
   ImageSize->Full]], "BottomCell",
- CellID->65459429]
+ CellID->686812580]
 }, Open  ]]
 },
 WindowSize->{1680, 1008},
-WindowMargins->{{1249, Automatic}, {206, Automatic}},
+WindowMargins->{{Automatic, -1688}, {-8, Automatic}},
 WindowTitle->"MoreCalculusTests.nb",
 DockedCells->{
   Cell[
@@ -4389,8 +4380,8 @@ DockedCells->{
               DynamicBox[
                ToBoxes[
                 
-                MUnit`Palette`Private`resultColorBar$$[{119515544, 27654980, 
-                 471099913, 231359512, 33748312, 322337029}, {1, 2, 3, 4, 5, 
+                MUnit`Palette`Private`resultColorBar$$[{630412589, 130691071, 
+                 166844808, 573798378, 27485216, 243936789}, {1, 2, 3, 4, 5, 
                  6}, {}, {}, {}, 250, 12], StandardForm]], 
               ActionMenuBox[
                PaneSelectorBox[{False -> DynamicBox[
@@ -4691,7 +4682,7 @@ DockedCells->{
    RGBColor[0.827, 0.827, 0.827], "DockedCell", CellTags -> 
    "MUnitResultsCell"]},
 TaggingRules->{"$testsRun" -> True, "$someTestsFailed" -> False},
-FrontEndVersion->"10.3 for Microsoft Windows (64-bit) (October 9, 2015)",
+FrontEndVersion->"10.3 for Microsoft Windows (64-bit) (December 10, 2015)",
 StyleDefinitions->FrontEnd`FileName[{"MUnit"}, "MUnit.nb", CharacterEncoding -> 
   "WindowsEastEurope"]
 ]
@@ -4707,64 +4698,64 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[614, 23, 1525, 40, 217, "VerificationTest",
+Cell[614, 23, 1551, 40, 217, "VerificationTest",
  CellID->201052083],
-Cell[2142, 65, 3199, 101, 57, "ExpectedOutput",
+Cell[2168, 65, 3199, 101, 57, "ExpectedOutput",
  CellID->180828655],
-Cell[5344, 168, 11737, 263, 25, "TestSuccess",
- CellID->119515544],
-Cell[17084, 433, 11020, 277, 41, "BottomCell",
- CellID->45025899]
+Cell[5370, 168, 11737, 263, 25, "TestSuccess",
+ CellID->630412589],
+Cell[17110, 433, 11021, 277, 41, "BottomCell",
+ CellID->381896421]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[28141, 715, 1276, 37, 172, "VerificationTest",
+Cell[28168, 715, 1300, 37, 172, "VerificationTest",
  CellID->774191578],
-Cell[29420, 754, 347, 12, 39, "ExpectedOutput",
+Cell[29471, 754, 347, 12, 39, "ExpectedOutput",
  CellID->591602244],
-Cell[29770, 768, 10964, 251, 25, "TestSuccess",
- CellID->27654980],
-Cell[40737, 1021, 11021, 277, 41, "BottomCell",
- CellID->438755595]
+Cell[29821, 768, 10929, 251, 25, "TestSuccess",
+ CellID->130691071],
+Cell[40753, 1021, 11021, 277, 41, "BottomCell",
+ CellID->175645781]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[51795, 1303, 883, 22, 148, "VerificationTest",
+Cell[51811, 1303, 908, 22, 148, "VerificationTest",
  CellID->637559744],
-Cell[52681, 1327, 1023, 36, 60, "ExpectedOutput",
+Cell[52722, 1327, 1023, 36, 60, "ExpectedOutput",
  CellID->73120908],
-Cell[53707, 1365, 13741, 287, 25, "TestSuccess",
- CellID->471099913],
-Cell[67451, 1654, 11021, 277, 41, "BottomCell",
- CellID->314055124]
+Cell[53748, 1365, 13055, 279, 25, "TestSuccess",
+ CellID->166844808],
+Cell[66806, 1646, 11021, 277, 41, "BottomCell",
+ CellID->116146577]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[78509, 1936, 1307, 39, 174, "VerificationTest",
+Cell[77864, 1928, 1335, 40, 174, "VerificationTest",
  CellID->28004484],
-Cell[79819, 1977, 674, 23, 44, "ExpectedOutput",
+Cell[79202, 1970, 674, 23, 44, "ExpectedOutput",
  CellID->320660938],
-Cell[80496, 2002, 12409, 271, 25, "TestSuccess",
- CellID->231359512],
-Cell[92908, 2275, 11021, 277, 41, "BottomCell",
- CellID->419377549]
+Cell[79879, 1995, 12089, 267, 25, "TestSuccess",
+ CellID->573798378],
+Cell[91971, 2264, 11020, 277, 41, "BottomCell",
+ CellID->69322084]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[103966, 2557, 1342, 40, 172, "VerificationTest",
+Cell[103028, 2546, 1368, 41, 172, "VerificationTest",
  CellID->360980442],
-Cell[105311, 2599, 650, 23, 41, "ExpectedOutput",
+Cell[104399, 2589, 650, 23, 41, "ExpectedOutput",
  CellID->112822704],
-Cell[105964, 2624, 12200, 267, 25, "TestSuccess",
- CellID->33748312],
-Cell[118167, 2893, 11019, 277, 41, "BottomCell",
- CellID->5707875]
+Cell[105052, 2614, 12164, 267, 25, "TestSuccess",
+ CellID->27485216],
+Cell[117219, 2883, 11021, 277, 41, "BottomCell",
+ CellID->266145291]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[129223, 3175, 1175, 32, 188, "VerificationTest",
+Cell[128277, 3165, 1201, 33, 188, "VerificationTest",
  CellID->40379470],
-Cell[130401, 3209, 1321, 45, 53, "ExpectedOutput",
+Cell[129481, 3200, 1321, 45, 53, "ExpectedOutput",
  CellID->636746377],
-Cell[131725, 3256, 14553, 301, 25, "TestSuccess",
- CellID->322337029],
-Cell[146281, 3559, 11020, 277, 41, "BottomCell",
- CellID->65459429]
+Cell[130805, 3247, 14505, 301, 25, "TestSuccess",
+ CellID->243936789],
+Cell[145313, 3550, 11021, 277, 41, "BottomCell",
+ CellID->686812580]
 }, Open  ]]
 }
 ]

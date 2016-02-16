@@ -10,43 +10,39 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     12001,        331]
-NotebookOptionsPosition[     10970,        293]
-NotebookOutlinePosition[     11315,        308]
-CellTagsIndexPosition[     11272,        305]
+NotebookDataLength[     12513,        349]
+NotebookOptionsPosition[     11474,        312]
+NotebookOutlinePosition[     11823,        327]
+CellTagsIndexPosition[     11780,        324]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 
 Cell[CellGroupData[{
-Cell["GitHub", "Section",
- CellChangeTimes->{{3.658771851420079*^9, 3.658771853058082*^9}}],
+Cell["GitHub (old)", "Section",
+ CellChangeTimes->{{3.658771851420079*^9, 3.658771853058082*^9}, {
+  3.664645964321722*^9, 3.664645966588722*^9}}],
 
-Cell[BoxData[
- RowBox[{
-  RowBox[{"SetDirectory", "@", 
-   RowBox[{"NotebookDirectory", "[", "]"}]}], ";"}]], "Input",
+Cell["SetDirectory@NotebookDirectory[];", "Text",
  CellChangeTimes->{{3.6587718298360386`*^9, 3.6587718317100415`*^9}, 
-   3.6589389697607994`*^9, {3.6589404360779896`*^9, 3.6589404363285904`*^9}}],
+   3.6589389697607994`*^9, {3.6589404360779896`*^9, 3.6589404363285904`*^9}, 
+   3.664645972497922*^9}],
 
-Cell[BoxData[
- RowBox[{
-  RowBox[{
-   RowBox[{"FileTemplateApply", "[", "\[IndentingNewLine]", 
-    RowBox[{
-     RowBox[{"Import", "[", "\"\<pushTemplate.tr\>\"", "]"}], ",", 
-     "\[IndentingNewLine]", 
-     RowBox[{"<|", "\[IndentingNewLine]", 
-      RowBox[{
-      "\"\<commitMessage\>\"", "\[Rule]", 
-       "\"\<readMe and template updated\>\""}], "\[IndentingNewLine]", "|>"}],
-      ",", "\[IndentingNewLine]", "\"\<temp.bat\>\""}], "\[IndentingNewLine]",
-     "]"}], "//", "SystemOpen"}], "\[IndentingNewLine]"}]], "Input",
+Cell["\<\
+FileTemplateApply[
+  Import[\"pushTemplate.tr\"],
+  <|
+   \"commitMessage\" -> \"readMe and template updated\"
+   |>,
+  \"temp.bat\"
+  ] // SystemOpen
+\
+\>", "Text",
  CellChangeTimes->{{3.6587718298360386`*^9, 3.6587718317100415`*^9}, 
    3.6589389697607994`*^9, {3.6589404360779896`*^9, 3.658940473170066*^9}, {
    3.6589405187531567`*^9, 3.6589405283543763`*^9}, {3.6590041224753017`*^9, 
-   3.659004131064317*^9}}]
+   3.659004131064317*^9}, 3.664645972497922*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -72,8 +68,6 @@ Cell[CellGroupData[{
 Cell["some tests", "Subsection",
  CellChangeTimes->{{3.6589405974551134`*^9, 3.6589405991147165`*^9}}],
 
-Cell[CellGroupData[{
-
 Cell[BoxData[
  RowBox[{"dChange", "[", "\[IndentingNewLine]", 
   RowBox[{
@@ -92,16 +86,41 @@ Cell[BoxData[
  CellChangeTimes->{{3.6590103062997274`*^9, 3.6590103325649233`*^9}}],
 
 Cell[BoxData[
- RowBox[{
-  RowBox[{"2", " ", "x"}], "+", 
-  SuperscriptBox["x", "2"]}]], "Output",
- CellChangeTimes->{3.6590103330017242`*^9, 3.6590193325751615`*^9}]
-}, Open  ]],
-
-Cell[BoxData[
  RowBox[{"CoordinateTransformData", "[", "]"}]], "Input",
  CellChangeTimes->{{3.6579922190629168`*^9, 3.6579922277719536`*^9}, {
   3.657992513009245*^9, 3.6579925131028447`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"r", "\[Equal]", 
+      SqrtBox[
+       RowBox[{
+        SuperscriptBox["x", "2"], "+", 
+        SuperscriptBox["y", "2"]}]]}], ",", 
+     RowBox[{"\[Theta]", "\[Equal]", 
+      RowBox[{"ArcTan", "[", 
+       RowBox[{"x", ",", "y"}], "]"}]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "y"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.664638644957017*^9, 3.6646386830380173`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{"CoordinateTransformData", "[", 
+  RowBox[{
+   RowBox[{"\"\<Cartesian\>\"", "\[Rule]", "\"\<Polar\>\""}], ",", 
+   "\"\<Mapping\>\"", ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "y"}], "}"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"CoordinateTransformData", "[", 
+  RowBox[{
+   RowBox[{"\"\<Polar\>\"", "->", "\"\<Cartesian\>\""}], ",", 
+   "\"\<Mapping\>\"", ",", 
+   RowBox[{"{", 
+    RowBox[{"r", ",", "th"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.664638709230017*^9, 3.6646387443240175`*^9}}],
 
 Cell[BoxData[
  RowBox[{"Assuming", "[", 
@@ -292,8 +311,8 @@ Cell[BoxData[
 }, Open  ]]
 },
 WindowSize->{1257, 726},
-WindowMargins->{{-8, Automatic}, {Automatic, -8}},
-FrontEndVersion->"10.3 for Microsoft Windows (64-bit) (October 9, 2015)",
+WindowMargins->{{Automatic, 141}, {102, Automatic}},
+FrontEndVersion->"10.3 for Microsoft Windows (64-bit) (December 10, 2015)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -308,29 +327,28 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 91, 1, 63, "Section"],
-Cell[674, 25, 266, 5, 31, "Input"],
-Cell[943, 32, 785, 16, 172, "Input"]
+Cell[580, 22, 146, 2, 63, "Section"],
+Cell[729, 26, 223, 3, 30, "Text"],
+Cell[955, 31, 449, 13, 163, "Text"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1765, 53, 101, 1, 63, "Section"],
-Cell[1869, 56, 293, 7, 52, "Input"],
-Cell[2165, 65, 125, 2, 31, "Input"],
+Cell[1441, 49, 101, 1, 63, "Section"],
+Cell[1545, 52, 293, 7, 52, "Input"],
+Cell[1841, 61, 125, 2, 31, "Input"],
 Cell[CellGroupData[{
-Cell[2315, 71, 102, 1, 43, "Subsection"],
-Cell[CellGroupData[{
-Cell[2442, 76, 570, 15, 92, "Input"],
-Cell[3015, 93, 165, 4, 31, "Output"]
-}, Open  ]],
-Cell[3195, 100, 192, 3, 31, "Input"],
-Cell[3390, 105, 1008, 29, 72, "Input"],
-Cell[4401, 136, 3409, 62, 52, "Input"],
-Cell[7813, 200, 273, 6, 31, "Input"],
-Cell[8089, 208, 521, 13, 72, "Input"],
-Cell[8613, 223, 121, 2, 31, "Input"],
-Cell[8737, 227, 1392, 39, 152, "Input"],
-Cell[10132, 268, 236, 5, 31, "Input"],
-Cell[10371, 275, 571, 14, 92, "Input"]
+Cell[1991, 67, 102, 1, 43, "Subsection"],
+Cell[2096, 70, 570, 15, 92, "Input"],
+Cell[2669, 87, 192, 3, 31, "Input"],
+Cell[2864, 92, 489, 15, 45, "Input"],
+Cell[3356, 109, 535, 13, 52, "Input"],
+Cell[3894, 124, 1008, 29, 72, "Input"],
+Cell[4905, 155, 3409, 62, 52, "Input"],
+Cell[8317, 219, 273, 6, 31, "Input"],
+Cell[8593, 227, 521, 13, 72, "Input"],
+Cell[9117, 242, 121, 2, 31, "Input"],
+Cell[9241, 246, 1392, 39, 152, "Input"],
+Cell[10636, 287, 236, 5, 31, "Input"],
+Cell[10875, 294, 571, 14, 92, "Input"]
 }, Open  ]]
 }, Open  ]]
 }

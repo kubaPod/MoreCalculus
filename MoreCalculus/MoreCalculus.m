@@ -23,7 +23,7 @@ Begin["`Private`"]
 	        
 	        arguments = List @@@ functions;
 	        
-	        newVarsSolved = newVars /. Solve[transformations, newVars, Reals][[1]];
+	        newVarsSolved = newVars /. Solve[transformations, newVars][[1]];
 	        
 	        functionsReplacements = Map[
 		        Function[i,
@@ -35,7 +35,7 @@ Begin["`Private`"]
 	        	Range @ Length @ functions
 	        ];
 	        
-	        variablesReplacements = Solve[transformations,oldVars, Reals][[1]];
+	        variablesReplacements = Solve[transformations,oldVars][[1]];
 	        
 	        expr /. functionsReplacements /. variablesReplacements // Simplify // Normal
 	    ];
