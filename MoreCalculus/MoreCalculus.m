@@ -1,15 +1,15 @@
 
 BeginPackage["MoreCalculus`"]
 
-	dChange;
+	DChange;
 
 Begin["`Private`"]
 
 	
-	ClearAll[dChange];
-	(*SetAttributes[dChange,HoldAll];*)
+	ClearAll[DChange];
 
-	dChange[
+
+	DChange[
 		expr_, 
 		transformations_List,
 		oldVars_List,
@@ -17,37 +17,37 @@ Begin["`Private`"]
 		functions_List
 		] := Module[ {pos,functionsReplacements,variablesReplacements,arguments,heads,newVarsSolved}
 			,
-	        pos = Flatten[Outer[Position,functions,oldVars],{{1},{2},{3,4}}];
+	        pos = Flatten[Outer[Position, functions, oldVars],{{1},{2},{3,4}}];
 	        
 	        heads = functions[[All,0]];
 	        
-	        arguments = List@@@functions;
+	        arguments = List @@@ functions;
 	        
-	        newVarsSolved = newVars/.Solve[transformations,newVars][[1]];
+	        newVarsSolved = newVars /. Solve[transformations, newVars, Reals][[1]];
 	        
 	        functionsReplacements = Map[
 		        Function[i,
-			        heads[[i]]->( Function[#,#2]&[
+			        heads[[i]] -> ( Function[#,#2]&[
 			        	arguments[[i]],
 			        	ReplacePart[functions[[i]],Thread[pos[[i]]->newVarsSolved]]]
 			        )
 		        ],
-	        	Range@Length@functions
+	        	Range @ Length @ functions
 	        ];
 	        
-	        variablesReplacements = Solve[transformations,oldVars][[1]];
+	        variablesReplacements = Solve[transformations,oldVars, Reals][[1]];
 	        
-	        expr/.functionsReplacements/.variablesReplacements//Simplify//Normal
+	        expr /. functionsReplacements /. variablesReplacements // Simplify // Normal
 	    ];
 
-		dChange[expr_,x___]:=dChange[expr,##]&@@Replace[{x},var:Except[_List]:>{var},{1}];
+		DChange[expr_,x___]:=DChange[expr,##]&@@Replace[{x},var:Except[_List]:>{var},{1}];
 
-		dChange[expr_,functions:{(_[___]==_)..}]:=expr/.Replace[
+		DChange[expr_,functions:{(_[___]==_)..}]:=expr/.Replace[
 			functions,
-			(f_[vars__]==body_):>(f->Function[{vars},body]),{1}
+			(f_[vars__]==body_) :> (f->Function[{vars},body]),{1}
 		];
 		
-		dChange[
+		DChange[
 			expr_, 
 			coordinates:Verbatim[Rule][__String],
 			oldVars_List,
@@ -62,7 +62,7 @@ Begin["`Private`"]
  			transformation = Thread[newVars == mapping ];
  			
  			{
- 				dChange[expr, transformation, oldVars, newVars, functions],
+ 				DChange[expr, transformation, oldVars, newVars, functions],
  				transformation
  			}
 		
