@@ -1,7 +1,9 @@
 # MoreCalculus
-Repository for MoreCalculus Mathematica package
+Repository for MoreCalculus` Mathematica package.
 
-This package is meant to provide additional functions with application in differential equations area.
+This package is meant to provide additional functions with application in calculus area.
 
-If you just want to use it, copy the MoreCalculus directory to $UserBaseDirectory/Applications and 
-evaluate << MoreCalculus` in the notebook.
+### Quick start
+
+Go to "release" tab, download the latest one and extract it in your $UserBaseDirectory/Applications
+
