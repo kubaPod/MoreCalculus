@@ -5,7 +5,8 @@ BeginPackage["MoreCalculus`"]
 
 Begin["`Private`"]
 
-	
+	(*all of this is likely to change*)
+
 	ClearAll[DChange];
 
 
