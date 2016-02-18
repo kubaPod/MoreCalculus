@@ -1,14 +1,26 @@
 
+(* Mathematica Source File  *)
+(* Created by Mathematica Plugin for IntelliJ IDEA *)
+(* :Author: Kuba *)
+(* :Date: 2016-02-18 *)
+
+(* ReadMore: http://mathematica.stackexchange.com/a/80267/5478 *)
+
+
+
 BeginPackage["MoreCalculus`"]
 
-	DChange;
+	DChange::usage = "
+		DChange[expresion, {transformations}, {oldVars}, {newVars}, {functions}]
+
+		DChange[expresion, \"Coordinates1\"->\"Coordinates2\", ...]
+
+		DChange[expresion, {functionsSubstitutions}]
+	";
 
 Begin["`Private`"]
 
 	(*all of this is likely to change*)
-
-	ClearAll[DChange];
-
 
 	DChange[
 		expr_, 
