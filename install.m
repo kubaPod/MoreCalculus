@@ -8,7 +8,7 @@
     localZip,localRelease
   },
     packageName   = "MoreCalculus";
-    releaseNumber = "v0.1.2";
+    releaseNumber = "v0.1.3";
 
     releaseSource = "https://github.com/kubaPod/MoreCalculus/archive/" <> releaseNumber <> ".zip";
     packagesDir   = FileNameJoin[{$UserBaseDirectory, "Applications"}];
