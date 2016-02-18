@@ -12,7 +12,7 @@
 
     releaseSource = "https://github.com/kubaPod/MoreCalculus/archive/" <> releaseNumber <> ".zip";
     packagesDir   = FileNameJoin[{$UserBaseDirectory, "Applications"}];
-    packageDir    = FileNameJoin[{packagesDir, packageName}]
+    packageDir    = FileNameJoin[{packagesDir, packageName}];
 
 
     available = URLFetch[releaseSource, "StatusCode"] === 200;
@@ -37,7 +37,7 @@
         packageDir
       ];
 
-      DeleteDirectory @ localRelease[[1]]
+      DeleteDirectory @ localRelease[[1]];
       DeleteFile @ FileNameJoin[{packagesDir, packageName <> ".zip"}]
     ];
   ]
