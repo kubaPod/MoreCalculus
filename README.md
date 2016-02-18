@@ -7,3 +7,6 @@ This package is meant to provide additional functions with application in calcul
 
 Go to "release" tab, download the latest one and extract it in your $UserBaseDirectory/Applications
 
+
+
+
