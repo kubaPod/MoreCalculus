@@ -1,5 +1,6 @@
 # MoreCalculus
-Repository for a MoreCalculus` Mathematica package.
+
+MoreCalculus` Mathematica package repository.
 
 This package is meant to provide additional functions with application in calculus area. 
 
