@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     15275,        439]
-NotebookOptionsPosition[     13702,        386]
-NotebookOutlinePosition[     14261,        407]
-CellTagsIndexPosition[     14157,        402]
+NotebookDataLength[     18275,        532]
+NotebookOptionsPosition[     16187,        461]
+NotebookOutlinePosition[     16747,        482]
+CellTagsIndexPosition[     16643,        477]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -49,6 +49,81 @@ Cell[CellGroupData[{
 
 Cell["MoreCalculus", "Section",
  CellChangeTimes->{{3.6587718391778555`*^9, 3.6587718423676624`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"releasesPath", "=", 
+  RowBox[{"FileNameJoin", "[", 
+   RowBox[{"{", 
+    RowBox[{"\"\<E:\>\"", ",", "\"\<Releases\>\""}], "}"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.665250367730523*^9, 3.665250371871523*^9}, {
+  3.665253784946101*^9, 3.6652538402628016`*^9}, {3.665254349859604*^9, 
+  3.6652543782930045`*^9}, {3.6652547097016063`*^9, 3.665254709955006*^9}}],
+
+Cell[BoxData["\<\"E:\\\\Releases\"\>"], "Output",
+ CellChangeTimes->{
+  3.665250372378523*^9, {3.665253791278702*^9, 3.6652538096419015`*^9}, 
+   3.6652538409637012`*^9, 3.6652543807758045`*^9, 3.6652547106859064`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"SetDirectory", "@", 
+  RowBox[{"NotebookDirectory", "[", "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"files", "=", 
+  RowBox[{"FileNames", "[", 
+   RowBox[{"\"\<MoreCalculus/*\>\"", ",", 
+    RowBox[{"{", "}"}]}], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.665253843571102*^9, 3.6652539586355023`*^9}, {
+  3.665254258448404*^9, 3.6652542986790037`*^9}}],
+
+Cell[BoxData["\<\"E:\\\\Idea Projects\\\\MoreCalculus\"\>"], "Output",
+ CellChangeTimes->{{3.665253889127202*^9, 3.665253958866702*^9}, {
+  3.665254263140704*^9, 3.6652542991022043`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", "\<\"MoreCalculus\\\\MoreCalculus.m\"\>", "}"}]], "Output",
+ CellChangeTimes->{{3.665253889127202*^9, 3.665253958866702*^9}, {
+  3.665254263140704*^9, 3.6652542991022043`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"CopyFile", "[", 
+    RowBox[{"#", ",", 
+     RowBox[{"FileNameJoin", "[", 
+      RowBox[{"{", 
+       RowBox[{"releasesPath", ",", "#"}], "}"}], "]"}]}], "]"}], "&"}], "/@",
+   "files"}]], "Input",
+ CellChangeTimes->{{3.665254315352504*^9, 3.665254331235804*^9}, {
+  3.6652543895056047`*^9, 3.665254431789705*^9}, {3.665254474579405*^9, 
+  3.6652545216788054`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", "\<\"E:\\\\Releases\\\\MoreCalculus\\\\MoreCalculus.m\"\>", 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.665254418271105*^9, 3.665254432760105*^9}, 
+   3.665254713930806*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DirectoryQ", "@", "releasesPath"}]], "Input",
+ CellChangeTimes->{{3.6652546669695063`*^9, 3.6652546917469063`*^9}}],
+
+Cell[BoxData["False"], "Output",
+ CellChangeTimes->{3.665254692338606*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"SystemOptions", "@"}]], "Input",
+ CellChangeTimes->{{3.665254441592905*^9, 3.665254459937905*^9}}],
 
 Cell[BoxData[{
  RowBox[{
@@ -385,7 +460,7 @@ Cell[BoxData[
 }, Open  ]]
 },
 WindowSize->{1257, 726},
-WindowMargins->{{131, Automatic}, {Automatic, 114}},
+WindowMargins->{{Automatic, -1412}, {39, Automatic}},
 FrontEndVersion->"10.3 for Microsoft Windows (64-bit) (December 10, 2015)",
 StyleDefinitions->"Default.nb"
 ]
@@ -395,13 +470,13 @@ StyleDefinitions->"Default.nb"
 (*CellTagsOutline
 CellTagsIndex->{
  "Info-b77cc540-a432-496c-86df-f9937c203f1c"->{
-  Cell[3459, 119, 398, 7, 143, "Print",
+  Cell[5944, 194, 398, 7, 143, "Print",
    CellTags->"Info-b77cc540-a432-496c-86df-f9937c203f1c"]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Info-b77cc540-a432-496c-86df-f9937c203f1c", 14034, 396}
+ {"Info-b77cc540-a432-496c-86df-f9937c203f1c", 16520, 471}
  }
 *)
 (*NotebookFileOutline
@@ -413,32 +488,50 @@ Cell[955, 31, 449, 13, 163, "Text"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[1441, 49, 101, 1, 63, "Section"],
-Cell[1545, 52, 293, 7, 52, "Input"],
 Cell[CellGroupData[{
-Cell[1863, 63, 1043, 33, 31, "Input"],
-Cell[2909, 98, 400, 12, 31, "Output"]
+Cell[1567, 54, 388, 7, 31, "Input"],
+Cell[1958, 63, 218, 3, 31, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3346, 115, 110, 2, 31, "Input"],
-Cell[3459, 119, 398, 7, 143, "Print",
+Cell[2213, 71, 375, 8, 52, "Input"],
+Cell[2591, 81, 187, 2, 31, "Output"],
+Cell[2781, 85, 204, 3, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3022, 93, 412, 11, 31, "Input"],
+Cell[3437, 106, 200, 4, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3674, 115, 139, 2, 31, "Input"],
+Cell[3816, 119, 74, 1, 31, "Output"]
+}, Open  ]],
+Cell[3905, 123, 122, 2, 31, "Input"],
+Cell[4030, 127, 293, 7, 52, "Input"],
+Cell[CellGroupData[{
+Cell[4348, 138, 1043, 33, 31, "Input"],
+Cell[5394, 173, 400, 12, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5831, 190, 110, 2, 31, "Input"],
+Cell[5944, 194, 398, 7, 143, "Print",
  CellTags->"Info-b77cc540-a432-496c-86df-f9937c203f1c"]
 }, Open  ]],
-Cell[3872, 129, 125, 2, 31, "Input"],
-Cell[4000, 133, 122, 2, 31, "Input"],
+Cell[6357, 204, 125, 2, 31, "Input"],
+Cell[6485, 208, 122, 2, 31, "Input"],
 Cell[CellGroupData[{
-Cell[4147, 139, 102, 1, 43, "Subsection"],
-Cell[4252, 142, 598, 16, 92, "Input"],
-Cell[4853, 160, 192, 3, 31, "Input"],
-Cell[5048, 165, 489, 15, 45, "Input"],
-Cell[5540, 182, 535, 13, 52, "Input"],
-Cell[6078, 197, 1032, 30, 72, "Input"],
-Cell[7113, 229, 3409, 62, 52, "Input"],
-Cell[10525, 293, 273, 6, 31, "Input"],
-Cell[10801, 301, 521, 13, 72, "Input"],
-Cell[11325, 316, 121, 2, 31, "Input"],
-Cell[11449, 320, 1412, 39, 152, "Input"],
-Cell[12864, 361, 236, 5, 31, "Input"],
-Cell[13103, 368, 571, 14, 92, "Input"]
+Cell[6632, 214, 102, 1, 43, "Subsection"],
+Cell[6737, 217, 598, 16, 92, "Input"],
+Cell[7338, 235, 192, 3, 31, "Input"],
+Cell[7533, 240, 489, 15, 45, "Input"],
+Cell[8025, 257, 535, 13, 52, "Input"],
+Cell[8563, 272, 1032, 30, 72, "Input"],
+Cell[9598, 304, 3409, 62, 52, "Input"],
+Cell[13010, 368, 273, 6, 31, "Input"],
+Cell[13286, 376, 521, 13, 72, "Input"],
+Cell[13810, 391, 121, 2, 31, "Input"],
+Cell[13934, 395, 1412, 39, 152, "Input"],
+Cell[15349, 436, 236, 5, 31, "Input"],
+Cell[15588, 443, 571, 14, 92, "Input"]
 }, Open  ]]
 }, Open  ]]
 }
