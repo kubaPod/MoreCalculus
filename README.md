@@ -11,7 +11,7 @@ It's in a very crude state, released to get some feedback and test cases from co
 
 - Installing:
 
-        (    If[DirectoryQ[#], DeleteDirectory[#, DeleteContents -> True];
+        (    If[DirectoryQ[#], DeleteDirectory[#, DeleteContents -> True]];
              CreateDirectory[#];
              URLSave[
                 "https://raw.githubusercontent.com/kubaPod/MoreCalculus/master/MoreCalculus.m", 
