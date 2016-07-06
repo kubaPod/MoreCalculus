@@ -11,9 +11,13 @@ It's in a very crude state, released to get some feedback and test cases from co
 
 - Installing:
 
-        Import[
-            "https://raw.githubusercontent.com/kubaPod/MoreCalculus/master/install.m"
-        ]
+        (    If[DirectoryQ[#], DeleteDirectory[#, DeleteContents -> True];
+             CreateDirectory[#];
+             URLSave[
+                "https://raw.githubusercontent.com/kubaPod/MoreCalculus/master/MoreCalculus.m", 
+                FileNameJoin[{#, "KeyTracking.m"}]
+             ]
+        ) & @ FileNameJoin[{$UserBaseDirectory, "Applications", "MoreCalculus"}]
     
     This procedure will overwrite anything in `$UserBaseDirectory/Applications/MoreCalculus`
     

@@ -3,18 +3,24 @@
 (* :Author: Kuba *)
 (* :Date: 2016-02-23 *)
 
-BeginPackage["MoreCalculus`Private`"]
+BeginPackage["MoreCalculus`"]
+
+Begin["`Dev`"]
+
+  content = FileNameJoin[{ FileNameDrop[$InputFileName,2], "MoreCalculus"}];
 
   releasePath = FileNameJoin[{"E", "Releases", "MoreCalculus"}];
 
   releaseProject[]:= Module[{},
     CopyDirectory[
-      FileNameJoin[{ FileNameDrop[$InputFileName,2], "MoreCalculus"}],
+      content,
       releasePath,
       CreateIntermediateDirectories -> True
     ];
 
   ];
 
-
 End[]
+
+
+EndPackage[]
