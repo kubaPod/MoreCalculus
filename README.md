@@ -14,8 +14,8 @@ It's in a very crude state, released to get some feedback and test cases from co
         (    If[DirectoryQ[#], DeleteDirectory[#, DeleteContents -> True]];
              CreateDirectory[#];
              URLSave[
-                "https://raw.githubusercontent.com/kubaPod/MoreCalculus/master/MoreCalculus.m", 
-                FileNameJoin[{#, "KeyTracking.m"}]
+                "https://raw.githubusercontent.com/kubaPod/MoreCalculus/master/MoreCalculus/MoreCalculus.m", 
+                FileNameJoin[{#, "MoreCalculus.m"}]
              ]
         ) & @ FileNameJoin[{$UserBaseDirectory, "Applications", "MoreCalculus"}]
     
