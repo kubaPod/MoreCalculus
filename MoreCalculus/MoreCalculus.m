@@ -9,7 +9,7 @@
 
 
 
-(* ::Section::Closed:: *)
+(* ::Section:: *)
 (*Begin*)
 
 
@@ -30,20 +30,19 @@ Begin["`Private`"]
 (*Content*)
 
 
+DChange // Options = {
+  Assumptions -> Automatic
+};
 
 
+DChange::ambTrans = StringJoin[
+  "Transformation rule is ambiguous. The first of found solutions is used:"
+, "\n\t``\n"
+, "Please add appropriate assumptions if this solution does not meet your expectations."
+];
+ 
+DChange::solveFailed = "Failed to solve given transformations for `` coordinates.";
 
-  DChange // Options = {Assumptions -> Automatic};
-  
-
-
-  DChange::ambTrans = StringJoin[
-    "The provided transformation rule is ambiguous. Only the first of possible transformations is applied:"
-  , "\n\t``\n"
-  , "Please add appropriate assumptions if this solution does not meet your expectations."
-  ];
-  
-  DChange::solveFailed = "Failed to solve given transformations for `` coordinates.";
 
 
     (*in case of single functions/variables etc., one can skip {} *)
@@ -51,6 +50,7 @@ Begin["`Private`"]
     expr
   , Sequence @@ Replace[{x}, var:Except[_List] :> {var}, {1} ]
   ];
+
 
 
     (*functions replacement*)
@@ -61,7 +61,10 @@ Begin["`Private`"]
   ];
 
 
+
 (*TODO: make this code more readable*)
+(*TODO: maybe functions_ are not needed*)
+(*TODO: Try with D[f[a[x]],x]/.a[x]\[Rule]a/.a'[x]\[Rule]... approach so one does not need to solve both ways.*)
 
 DChange[
   expr_                (*e.g. D[u[x, t], {t, 2}] == c^2 D[u[x, t], {x, 2}] *)
@@ -70,39 +73,29 @@ DChange[
 , newVars_List         (*e.g. {a, r}*)
 , functions_List       (*e.g. u[x, t]*)
 ] := Module[
-  {pos,functionsReplacements,variablesReplacements,arguments,heads,newVarsSolved
+  {functionsReplacements,variablesReplacements
   , tag = "DChange"
   , newVarsRules
   , oldVarsRules
+  , tempReplacement
   }
 , Catch[  
-    pos = Flatten[Outer[Position, functions, oldVars],{{1},{2},{3,4}}]
-        (* [{f[x, y], g[y]}, {x, y}] ---> {{{1}, {2}}, {{}, {1}}}*)
-  ; heads = functions[[All,0]] (* {u} *)
-  ; arguments = List @@@ functions (* {{x,t}} *)
-      
-  ; newVarsRules = Solve[transformations, newVars]; (* {{a\[Rule]_,r\[Rule]_}...} *)
-  ; checkSolveResult[newVarsRules, "new"]
-    
-  ; newVarsSolved = newVars /. First @ newVarsRules
+    newVarsRules = Solve[transformations, newVars]; (* {{a \[Rule] c t+x, r \[Rule] -c t+x}...} *)
+  ; checkSolveResult[newVarsRules, "new"]    
 
-  ; functionsReplacements = MapThread[
-      Function[{func,head,arg,pos}
-      , Head[func]->(Function @@ { List @@ func, ReplacePart[func,Thread[pos->newVarsSolved]]})
-      ]
-    , {functions,pos}
-](*= Map[
-      Function[
-        i
-      , heads[[i]] -> ( 
-          Function @@ {
-            arguments[[i]]
-          , ReplacePart[functions[[i]],Thread[pos[[i]]->newVarsSolved]]
-          }
-        )
-      ]
-    , Range @ Length @ functions
-    ]*)
+  ; tempReplacement = First @ newVarsRules (*{a \[Rule] c t+x,r \[Rule] -c t+x}*)
+  ; tempReplacement[[All, 1]] = oldVars  (*{x \[Rule] c t+x, t \[Rule] -c t+x}*)
+     (*step above may seem strange. but this or we need to create Functions 
+       where arguments have already oldVars replaced by newVars.
+       that could be more readable, will think about that
+      *)
+  
+  ; functionsReplacements = Function[
+      foo
+    , Head[foo]->(Function @@ { List @@ foo, foo /. tempReplacement})
+    ] /@ functions
+     (* {u\[Rule]Function[{x,t},u[c t+x,-c t+x]]} *)
+    
     
   ; oldVarsRules = Solve[transformations,oldVars]
   ; checkSolveResult[oldVarsRules, "old"]
@@ -117,6 +110,7 @@ DChange[
 
 
 
+
 checkSolveResult[result_, whichSolve_]:=Which[ 
   result === {}
 , Message[DChange::solveFailed, whichSolve]
@@ -125,6 +119,7 @@ checkSolveResult[result_, whichSolve_]:=Which[
 , Length @ result > 1
 , Message[DChange::ambTrans, Column @ Normal @ First @ result]
 ];
+
 
 
     (*CoordinateTransformData*)
