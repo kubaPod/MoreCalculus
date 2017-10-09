@@ -83,7 +83,7 @@ DChange[
     newVarsRules = Solve[transformations, newVars]; (* {{a \[Rule] c t+x, r \[Rule] -c t+x}...} *)
   ; checkSolveResult[newVarsRules, "new"]    
 
-  ; tempReplacement = First @ newVarsRules (*{a \[Rule] c t+x,r \[Rule] -c t+x}*)
+  ; tempReplacement =   First @ newVarsRules (*{a \[Rule] c t+x,r \[Rule] -c t+x}*)
   ; tempReplacement[[All, 1]] = oldVars  (*{x \[Rule] c t+x, t \[Rule] -c t+x}*)
      (*step above may seem strange. but this or we need to create Functions 
        where arguments have already oldVars replaced by newVars.
@@ -97,10 +97,10 @@ DChange[
      (* {u\[Rule]Function[{x,t},u[c t+x,-c t+x]]} *)
     
     
-  ; oldVarsRules = Solve[transformations,oldVars]
+  ; oldVarsRules =  Solve[transformations,oldVars]
   ; checkSolveResult[oldVarsRules, "old"]
   
-  ; variablesReplacements = First @ oldVarsRules
+  ; variablesReplacements =  First @ oldVarsRules
 
   ; expr /. functionsReplacements /. variablesReplacements // Simplify // Normal
      
@@ -124,53 +124,59 @@ checkSolveResult[result_, whichSolve_]:=Which[
 
     (*CoordinateTransformData*)
 
+     (*TODO: DChange[expr, coord1 \[Rule] coord2] syntax *)
 
+DChange[
+  expr_                                 (* D[f[x, y], x, x] + D[f[x, y], y, y] == 0 *)
+, coordinates:Verbatim[Rule][__String] (* "Cartesian" -> "Polar" *)
+, oldVars_List                          (*{x, y}*)
+, newVars_List						(*{r, \[Theta]}*)
+, functions_
+, OptionsPattern[]
+]:=Module[
+  { mapping, transformation
+  , tag = "DChangeCTD"
+  , dim, automaticAssumptions,assumptions
+  }
+  , Catch[
+      automaticAssumptions = TrueQ[OptionValue[Assumptions] === Automatic]
+    ; dim = Length @ oldVars
+    ; mapping = CoordinateTransformData[{coordinates, dim}, "Mapping", oldVars]
 
-    DChange[
-      expr_, 																(* D[f[x, y], x, x] + D[f[x, y], y, y] == 0 *)
-      coordinates:Verbatim[Rule][__String],	(* "Cartesian" -> "Polar" *)
-      oldVars_List,													(*{x, y}*)
-      newVars_List,													(*{r, \[Theta]}*)
-      functions_,														(*{r, \[Theta]}*)
-      OptionsPattern[]
-    ]:=Module[
-        {mapping, transformation, tag, dim, automaticAssumptions,assumptions}
-
-      ,	handleException[test_]:=If[ test, Throw[$Failed, tag]]
-
-      ;	Catch[
-            automaticAssumptions = TrueQ[OptionValue[Assumptions] === Automatic]
-
-          ;	dim = Length @ oldVars
-
-          ;	mapping = CoordinateTransformData[{coordinates, dim}, "Mapping", oldVars]
-
-          ; handleException[ MatchQ[mapping, _CoordinateTransformData] ]
-
-          ; assumptions = If[
-                !automaticAssumptions
-              ,	{}
-              ,	MapThread[
-                    CoordinateChartData[{#, dim}, "CoordinateRangeAssumptions", #2]&
-                  ,	{	List @@ coordinates,	{oldVars, newVars}}
-                ]
-            ]
-
-          ; handleException[ !FreeQ[assumptions, _CoordinateChartData] ]
-
-          ; transformation = Thread[newVars == mapping ]
-
-          ;	{
-                Assuming[assumptions, DChange[expr, transformation, oldVars, newVars, functions]]
-              ,	If[$VersionNumber>=10, Association, Identity][
-                  {"Mapping" -> transformation, "Assumptions" -> assumptions}
-                ]
-            }
-
-          ,	tag
+    ; If[ 
+        MatchQ[mapping, _CoordinateTransformData] 
+      , Throw[$Failed, tag]
+      ]
+      
+    ; assumptions = If[
+        Not @ automaticAssumptions
+      , {}
+      , MapThread[
+          CoordinateChartData[{#, dim}, "CoordinateRangeAssumptions", #2]&
+        , { List @@ coordinates, {oldVars, newVars}}
         ]
+      ]
 
-    ];
+    ; If[  
+        Not @ FreeQ[assumptions, _CoordinateChartData]
+      , Throw[ $Failed, tag]
+      ]
+
+    ; transformation = Thread[newVars == mapping ]
+
+    ; { Assuming[
+          assumptions
+        , DChange[expr, transformation, oldVars, newVars, functions]
+        ]
+      , If[
+          $VersionNumber>=10, Association, Identity][
+            {"Mapping" -> transformation, "Assumptions" -> assumptions}
+        ]
+      }
+      
+    , tag
+    ]
+];
 
 
 

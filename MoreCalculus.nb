@@ -10,466 +10,228 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     16665,        549]
-NotebookOptionsPosition[     14465,        470]
-NotebookOutlinePosition[     15362,        502]
-CellTagsIndexPosition[     15234,        496]
+NotebookDataLength[     10262,        284]
+NotebookOptionsPosition[      7813,        232]
+NotebookOutlinePosition[      8401,        254]
+CellTagsIndexPosition[      8358,        251]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
-
-Cell[CellGroupData[{
-Cell["MoreCalculus", "Section",ExpressionUUID->"9c684abc-a6fd-40f7-b06b-21ce7a1a28e7"],
-
-Cell[BoxData[""], "Input",ExpressionUUID->"c347dd7c-2c33-4cd1-ab56-b28e19187d79"],
-
-Cell[BoxData[
- RowBox[{"Get", "[", 
-  RowBox[{"\"\<initDev.m\>\"", ",", 
-   RowBox[{"Path", "\[Rule]", 
-    RowBox[{"NotebookDirectory", "[", "]"}]}]}], "]"}]], "Input",ExpressionUUI\
-D->"a09c5a7a-ad8d-41c9-89e2-14e460ad29c7"],
+Cell[BoxData[{
+ RowBox[{"<<", "GitLink`"}], "\[IndentingNewLine]", 
+ RowBox[{"<<", "MPM`"}]}], "Input",
+ CellChangeTimes->{{3.716552263920001*^9, 3.7165522656290007`*^9}, {
+  3.716552408853001*^9, 
+  3.7165524110370007`*^9}},ExpressionUUID->"314a36c4-308d-499d-9e67-\
+f26cc86cf79a"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"releasesPath", "=", 
-  RowBox[{"FileNameJoin", "[", 
-   RowBox[{"{", 
-    RowBox[{"\"\<E:\>\"", ",", "\"\<Releases\>\""}], "}"}], "]"}]}]], "Input",\
-ExpressionUUID->"9c0f8148-3818-4109-9af9-815a943702cc"],
+ RowBox[{"repo", " ", "=", " ", 
+  RowBox[{"GitOpen", "@", 
+   RowBox[{"NotebookDirectory", "[", "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.7165522693200006`*^9, 
+  3.716552281315001*^9}},ExpressionUUID->"4b315dde-7d9b-486c-8d52-\
+3eb86b90af62"],
 
-Cell[BoxData["\<\"E:\\\\Releases\"\>"], "Output",ExpressionUUID->"44690ab6-9c82-4e6d-8d75-2a0f29112cba"]
+Cell[BoxData[
+ TemplateBox[{RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+       RowBox[{"\"BareQ\"", "\[Rule]", "False"}], ",", 
+       RowBox[{
+        "\"GitDirectory\"", "\[Rule]", 
+         "\"E:\\\\Idea Projects\\\\MoreCalculus\\\\.git\\\\\""}], ",", 
+       RowBox[{
+        "\"WorkingDirectory\"", "\[Rule]", 
+         "\"E:\\\\Idea Projects\\\\MoreCalculus\\\\\""}]}], 
+     "\[RightAssociation]"}]},
+  "GitRepo",
+  DisplayFunction->(TooltipBox[
+    PanelBox[
+     GridBox[{{
+        GraphicsBox[{
+          EdgeForm[
+           GrayLevel[0.5]], 
+          GrayLevel[0.5], 
+          Thickness[0.1], 
+          LineBox[{{0, 0}, {5, 0}}], 
+          LineBox[{{0, 0}, {5, -3}}], 
+          GrayLevel[0.85], 
+          DiskBox[{0, 0}, 1], 
+          DiskBox[{5, 0}, 1], 
+          RGBColor[0, 1, 0], 
+          DiskBox[{5, -3}, 1]}, ImageSize -> 15], 
+        "\"E:\\\\Idea Projects\\\\MoreCalculus\\\\\""}}, 
+      BaselinePosition -> {1, 2}], FrameMargins -> 5, BaselinePosition -> 
+     Baseline], 
+    "GitRepo[<|\"BareQ\" -> False, \"GitDirectory\" -> \"E:\\\\Idea \
+Projects\\\\MoreCalculus\\\\.git\\\\\", \"WorkingDirectory\" -> \"E:\\\\Idea \
+Projects\\\\MoreCalculus\\\\\"|>]"]& )]], "Output",
+ CellChangeTimes->{
+  3.716552281717001*^9},ExpressionUUID->"f7102b2b-09d8-494a-89fa-\
+963c7d516514"]
 }, Open  ]],
 
 Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"GitStatus", "@", "repo"}]], "Input",
+ CellChangeTimes->{{3.716552289704001*^9, 
+  3.716552293245001*^9}},ExpressionUUID->"7c9be61a-d8e5-470b-9eea-\
+12f9577115ee"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"New\"\>", "\[Rule]", 
+    RowBox[{"{", "}"}]}], ",", 
+   RowBox[{"\<\"Modified\"\>", "\[Rule]", 
+    RowBox[{"{", "\<\"MoreCalculus\\\\MoreCalculus.m\"\>", "}"}]}], ",", 
+   RowBox[{"\<\"Deleted\"\>", "\[Rule]", 
+    RowBox[{"{", "}"}]}], ",", 
+   RowBox[{"\<\"TypeChange\"\>", "\[Rule]", 
+    RowBox[{"{", "}"}]}], ",", 
+   RowBox[{"\<\"IndexNew\"\>", "\[Rule]", 
+    RowBox[{"{", "}"}]}], ",", 
+   RowBox[{"\<\"IndexModified\"\>", "\[Rule]", 
+    RowBox[{"{", "}"}]}], ",", 
+   RowBox[{"\<\"IndexDeleted\"\>", "\[Rule]", 
+    RowBox[{"{", "}"}]}], ",", 
+   RowBox[{"\<\"IndexTypeChange\"\>", "\[Rule]", 
+    RowBox[{"{", "}"}]}]}], "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{
+  3.716552294069001*^9},ExpressionUUID->"9972922a-86d7-493c-be58-\
+3c3596553c31"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"pi", "=", 
+  RowBox[{"First", "@", 
+   RowBox[{"FileNames", "[", 
+    RowBox[{"\"\<*PacletInfo.m\>\"", ",", 
+     RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+     RowBox[{"{", "2", "}"}]}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.716552469208001*^9, 
+  3.716552496198001*^9}},ExpressionUUID->"bd049567-a40c-404c-a2e7-\
+e31744c2eaa8"],
+
+Cell[BoxData["\<\"E:\\\\Idea \
+Projects\\\\MoreCalculus\\\\MoreCalculus\\\\PacletInfo.m\"\>"], "Output",
+ CellChangeTimes->{{3.716552480896001*^9, 3.7165524970340014`*^9}, 
+   3.716578060192137*^9, 
+   3.7165781928391366`*^9},ExpressionUUID->"b6eda97b-2bd5-4b78-8b79-\
+9349cd9cb4cf"]
+}, Open  ]],
 
 Cell[BoxData[{
+ RowBox[{"Needs", "[", "\"\<DevTools`\>\"", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Needs", "[", "\"\<MPM`\>\"", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Needs", "[", "\"\<GitLink`\>\"", "]"}]}], "Input",
+ CellChangeTimes->{{3.7165780684241366`*^9, 
+  3.7165780902381363`*^9}},ExpressionUUID->"0a4da8a2-5d54-42d8-b3c6-\
+92bb455e67c3"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PacletVersionIncrement", "[", 
+  RowBox[{"pi", ",", "\"\<Minor\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.7165780955511365`*^9, 3.7165781097741365`*^9}, {
+  3.7165781474151363`*^9, 3.7165781492691364`*^9}, {3.7165784313111362`*^9, 
+  3.7165784395591364`*^9}},ExpressionUUID->"2e7573cb-4760-468a-ad14-\
+a6114354e1a6"],
+
+Cell[BoxData["\<\"0.2.0\"\>"], "Output",
+ CellChangeTimes->{
+  3.7165781104721365`*^9, {3.7165781498281364`*^9, 3.716578194657137*^9}, 
+   3.7165782255281363`*^9, 3.7165783945841365`*^9, {3.7165784267431364`*^9, 
+   3.7165784415141363`*^9}, 
+   3.7165785819631367`*^9},ExpressionUUID->"d8a0544f-efaa-4e8a-95c9-\
+2c79a7b70f77"]
+}, Open  ]],
+
+Cell[BoxData[
  RowBox[{"SetDirectory", "@", 
-  RowBox[{"NotebookDirectory", "[", "]"}]}], "\[IndentingNewLine]", 
- RowBox[{"files", "=", 
-  RowBox[{"FileNames", "[", 
-   RowBox[{"\"\<MoreCalculus/*\>\"", ",", 
-    RowBox[{"{", "}"}]}], "]"}]}]}], "Input",ExpressionUUID->"e717c837-e95d-\
-4e68-abe0-5100f1821616"],
-
-Cell[BoxData["\<\"E:\\\\Idea Projects\\\\MoreCalculus\"\>"], "Output",ExpressionUUID->"c092d0e1-ce74-4c77-b0a8-ecf07c4d64ec"],
-
-Cell[BoxData[
- RowBox[{"{", "\<\"MoreCalculus\\\\MoreCalculus.m\"\>", "}"}]], "Output",Expre\
-ssionUUID->"1ebf2527-50c1-4328-925b-b70e5e8f3c2f"]
-}, Open  ]],
+  RowBox[{"NotebookDirectory", "[", "]"}]}]], "Input",
+ CellChangeTimes->{{3.7165786305371366`*^9, 
+  3.7165786743111362`*^9}},ExpressionUUID->"ff514304-aa59-4dd2-948f-\
+19c8aecde5ee"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{
-  RowBox[{
-   RowBox[{"CopyFile", "[", 
-    RowBox[{"#", ",", 
-     RowBox[{"FileNameJoin", "[", 
-      RowBox[{"{", 
-       RowBox[{"releasesPath", ",", "#"}], "}"}], "]"}]}], "]"}], "&"}], "/@",
-   "files"}]], "Input",ExpressionUUID->"b5557023-a6e8-4206-a4cb-0a619591b65e"],
+ RowBox[{"PacletDirectoryAdd", "@", "\"\<./MoreCalculus\>\""}]], "Input",
+ CellChangeTimes->{{3.7165786793831367`*^9, 
+  3.7165786909901366`*^9}},ExpressionUUID->"71e3aad8-a512-4cdf-937d-\
+b3a20d75f6e8"],
 
 Cell[BoxData[
- RowBox[{"{", "\<\"E:\\\\Releases\\\\MoreCalculus\\\\MoreCalculus.m\"\>", 
-  "}"}]], "Output",ExpressionUUID->"4ef4cdfd-a841-44b4-b74f-3f09a3f1f70f"]
-}, Open  ]],
-
-Cell[BoxData[
- RowBox[{"\[IndentingNewLine]", 
-  RowBox[{"SetOptions", "[", 
-   RowBox[{
-    RowBox[{"EvaluationNotebook", "[", "]"}], ",", "\[IndentingNewLine]", 
-    RowBox[{"DockedCells", "\[Rule]", 
-     RowBox[{"{", 
-      RowBox[{"Cell", "@", 
-       RowBox[{"BoxData", "@", 
-        RowBox[{"ToBoxes", "@", 
-         RowBox[{"Button", "[", 
-          RowBox[{"\"\<Get@MoreCalculus`\>\"", ",", 
-           RowBox[{"Get", "[", 
-            RowBox[{"\"\<MoreCalculus`\>\"", ",", 
-             RowBox[{"Path", "\[Rule]", 
-              RowBox[{"{", 
-               RowBox[{"NotebookDirectory", "[", "]"}], "}"}]}]}], "]"}], ",", 
-           RowBox[{"Method", "\[Rule]", "\"\<Queued\>\""}]}], "]"}]}]}]}], 
-      "}"}]}]}], "\[IndentingNewLine]", "]"}]}]], "Input",ExpressionUUID->\
-"a95db02f-aa54-44bb-8399-3ed28266da88"],
-
-Cell[BoxData[
- RowBox[{"DChange", "[", 
-  RowBox[{
-   RowBox[{
-    RowBox[{"D", "[", 
-     RowBox[{
-      RowBox[{"u", "[", 
-       RowBox[{"x", ",", "t"}], "]"}], ",", 
-      RowBox[{"{", 
-       RowBox[{"t", ",", "2"}], "}"}]}], "]"}], "\[Equal]", 
-    RowBox[{
-     RowBox[{"c", "^", "2"}], " ", 
-     RowBox[{"D", "[", 
-      RowBox[{
-       RowBox[{"u", "[", 
-        RowBox[{"x", ",", "t"}], "]"}], ",", 
-       RowBox[{"{", 
-        RowBox[{"x", ",", "2"}], "}"}]}], "]"}]}]}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"a", "\[Equal]", 
-      RowBox[{"x", "+", 
-       RowBox[{"c", " ", "t"}]}]}], ",", 
-     RowBox[{"r", "\[Equal]", 
-      RowBox[{"x", "-", 
-       RowBox[{"c", " ", "t"}]}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"x", ",", "t"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"a", ",", "r"}], "}"}], ",", 
-   RowBox[{"u", "[", 
-    RowBox[{"x", ",", "t"}], "]"}]}], "]"}]], "Input",ExpressionUUID->\
-"d0272bba-2c51-4090-bf6d-c2d3132ac088"],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"?", "DChange"}]], "Input",ExpressionUUID->"cf5ecb65-adfb-4d3e-8d48-e1c9f49434ef"],
-
-Cell[BoxData[
- StyleBox["\<\"\\n\t\tDChange[expresion, {transformations}, {oldVars}, \
-{newVars}, {functions}]\\n\\n\t\tDChange[expresion, \
-\\\"Coordinates1\\\"->\\\"Coordinates2\\\", ...]\\n\\n\t\tDChange[expresion, \
-{functionsSubstitutions}]\\n\t\"\>", "MSG"]], "Print",
- CellTags->
-  "Info23676827117-6439561",ExpressionUUID->"bde67056-0402-4f5a-b785-\
-a53c92e074b8"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"?", "MoreCalculus`*"}]], "Input",ExpressionUUID->"558e2cf2-3c66-45c2-983a-30b5a3bff4da"],
-
-Cell[BoxData[
- StyleBox["\<\"\\n\\t\\tDChange[expresion, {transformations}, {oldVars}, \
-{newVars}, {functions}]\\n\\n\\t\\tDChange[expresion, \
-\\\"Coordinates1\\\"->\\\"Coordinates2\\\", \
-...]\\n\\n\\t\\tDChange[expresion, {functionsSubstitutions}]\\n\\t\"\>", 
-  "MSG"]], "Print", "PrintUsage",
- CellChangeTimes->{3.6970926545267177`*^9},
- CellTags->
-  "Info13697096254-3414425",ExpressionUUID->"e7914c47-a980-498a-88f4-\
-8ad618960b23"]
-}, Open  ]],
-
-Cell[BoxData[
- RowBox[{"DChange", "::", "usage"}]], "Input",ExpressionUUID->"1e247030-1aac-4266-b7bd-85d3842c94b1"],
-
-Cell[CellGroupData[{
-
-Cell["some tests", "Subsection",ExpressionUUID->"ffcd5ca3-0282-41a0-9b51-590ead79e534"],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"DChange", "[", "\[IndentingNewLine]", 
-  RowBox[{
-   RowBox[{
-    RowBox[{
-     RowBox[{
-      RowBox[{"Derivative", "[", 
-       RowBox[{"1", ",", "0"}], "]"}], "[", "f", "]"}], "[", 
-     RowBox[{"x", ",", "y"}], "]"}], "+", 
-    RowBox[{"f", "[", 
-     RowBox[{"x", ",", "y"}], "]"}]}], ",", "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"f", "[", 
-     RowBox[{"x", ",", "y"}], "]"}], "\[Equal]", 
-    RowBox[{"x", "^", "2"}]}]}], "\[IndentingNewLine]", "]"}]], "Input",Expres\
-sionUUID->"cb76ac47-1928-4997-a099-d8328ee1539b"],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"2", " ", "x"}], "+", 
-  SuperscriptBox["x", "2"]}]], "Output",
+ RowBox[{"{", "\<\"E:\\\\Idea Projects\\\\MoreCalculus\\\\MoreCalculus\"\>", 
+  "}"}]], "Output",
  CellChangeTimes->{
-  3.6970926589203176`*^9},ExpressionUUID->"770a3595-b433-45b2-8ffd-\
-0cffc90a7705"]
+  3.7165786931841364`*^9},ExpressionUUID->"22800929-7fe5-4a4f-947f-\
+200e8b9fcc17"]
 }, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"RebuildPacletData", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.7165786972721367`*^9, 
+  3.7165786993351364`*^9}},ExpressionUUID->"26fa66a9-a029-4025-a0e0-\
+833cce72c6ea"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"Assuming", "[", 
-  RowBox[{
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"r", ">", "0"}], ",", 
-     RowBox[{
-      RowBox[{"-", "Pi"}], "<", "\[Theta]", "<", "Pi"}]}], "}"}], ",", 
-   "\[IndentingNewLine]", 
-   RowBox[{"DChange", "[", 
-    RowBox[{
-     RowBox[{
-      RowBox[{
-       RowBox[{"D", "[", 
-        RowBox[{
-         RowBox[{"f", "[", 
-          RowBox[{"x", ",", "y"}], "]"}], ",", "x", ",", "x"}], "]"}], "+", 
-       RowBox[{"D", "[", 
-        RowBox[{
-         RowBox[{"f", "[", 
-          RowBox[{"x", ",", "y"}], "]"}], ",", "y", ",", "y"}], "]"}]}], 
-      "\[Equal]", "0"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"\"\<Cartesian\>\"", "\[Rule]", "\"\<Polar\>\""}], ",", 
-     RowBox[{"{", 
-      RowBox[{"x", ",", "y"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"r", ",", "\[Theta]"}], "}"}], ",", 
-     RowBox[{"f", "[", 
-      RowBox[{"x", ",", "y"}], "]"}]}], "]"}]}], "]"}]], "Input",ExpressionUUI\
-D->"67ddf9fe-035d-41db-9d3b-2470ce2bf37c"],
+ RowBox[{"PacletFind", "@", "\"\<MoreCalculus\>\""}]], "Input",
+ CellChangeTimes->{{3.7165788570891366`*^9, 
+  3.7165788690221367`*^9}},ExpressionUUID->"f2b68986-087f-4972-8f96-\
+cf4ed890442e"],
 
 Cell[BoxData[
  RowBox[{"{", 
-  RowBox[{
+  InterpretationBox[
    RowBox[{
-    RowBox[{
-     RowBox[{
-      SuperscriptBox["f", 
-       TagBox[
-        RowBox[{"(", 
-         RowBox[{"0", ",", "2"}], ")"}],
-        Derivative],
-       MultilineFunction->None], "[", 
-      RowBox[{"r", ",", "\[Theta]"}], "]"}], "+", 
-     RowBox[{"r", " ", 
-      RowBox[{"(", 
-       RowBox[{
-        RowBox[{
-         SuperscriptBox["f", 
-          TagBox[
-           RowBox[{"(", 
-            RowBox[{"1", ",", "0"}], ")"}],
-           Derivative],
-          MultilineFunction->None], "[", 
-         RowBox[{"r", ",", "\[Theta]"}], "]"}], "+", 
-        RowBox[{"r", " ", 
-         RowBox[{
-          SuperscriptBox["f", 
-           TagBox[
-            RowBox[{"(", 
-             RowBox[{"2", ",", "0"}], ")"}],
-            Derivative],
-           MultilineFunction->None], "[", 
-          RowBox[{"r", ",", "\[Theta]"}], "]"}]}]}], ")"}]}]}], "\[Equal]", 
-    "0"}], ",", 
-   RowBox[{"\[LeftAssociation]", 
-    RowBox[{
-     RowBox[{"\<\"Mapping\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"r", "\[Equal]", 
-         SqrtBox[
-          RowBox[{
-           SuperscriptBox["x", "2"], "+", 
-           SuperscriptBox["y", "2"]}]]}], ",", 
-        RowBox[{"\[Theta]", "\[Equal]", 
-         RowBox[{"ArcTan", "[", 
-          RowBox[{"x", ",", "y"}], "]"}]}]}], "}"}]}], ",", 
-     RowBox[{"\<\"Assumptions\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{
-         RowBox[{"x", "\[Element]", "Reals"}], "&&", 
-         RowBox[{"y", "\[Element]", "Reals"}]}], ",", 
-        RowBox[{
-         RowBox[{"r", ">", "0"}], "&&", 
-         RowBox[{
-          RowBox[{"-", "\[Pi]"}], "<", "\[Theta]", "\[LessEqual]", 
-          "\[Pi]"}]}]}], "}"}]}]}], "\[RightAssociation]"}]}], 
-  "}"}]], "Output",
+   "Paclet", "[", "\<\"MoreCalculus\"\>", ",", "\<\"0.2.0\"\>", ",", "<>", 
+    "]"}],
+   PacletManager`Paclet[
+   "Name" -> "MoreCalculus", "Version" -> "0.2.0", "MathematicaVersion" -> 
+    "9+", "Description" -> "Calculus related tools", "Creator" -> 
+    "Jakub (Kuba) Podkalicki", 
+    "Extensions" -> {{"Kernel", "Context" -> "MoreCalculus`"}}, "Location" -> 
+    "E:\\Idea Projects\\MoreCalculus\\MoreCalculus"]], "}"}]], "Output",
  CellChangeTimes->{
-  3.697092668339718*^9},ExpressionUUID->"332f22c9-1960-43b6-8556-\
-0a6ec8b5a990"]
+  3.7165788697311363`*^9},ExpressionUUID->"ffc37291-7d5d-4127-a073-\
+6f5ef946f83d"]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"DChange", "[", 
-  RowBox[{
-   RowBox[{
-    RowBox[{
-     RowBox[{"D", "[", 
-      RowBox[{
-       RowBox[{"f", "[", 
-        RowBox[{"x", ",", "y"}], "]"}], ",", "x", ",", "x"}], "]"}], "+", 
-     RowBox[{"D", "[", 
-      RowBox[{
-       RowBox[{"f", "[", 
-        RowBox[{"x", ",", "y"}], "]"}], ",", "y", ",", "y"}], "]"}]}], 
-    "\[Equal]", "0"}], ",", "\[IndentingNewLine]", 
-   RowBox[{"\"\<Cartesian\>\"", "\[Rule]", "\"\<Polar\>\""}], ",", 
-   RowBox[{"{", 
-    RowBox[{"x", ",", "y"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"r", ",", "\[Theta]"}], "}"}], ",", 
-   RowBox[{"f", "[", 
-    RowBox[{"x", ",", "y"}], "]"}]}], "]"}]], "Input",ExpressionUUID->\
-"a4ceac7d-3a98-4077-823a-b3fa8b699325"],
+ RowBox[{"PackPaclet", "@", "\"\<MoreCalculus\>\""}]], "Input",
+ CellChangeTimes->{{3.7165786305371366`*^9, 3.7165786743111362`*^9}, {
+   3.716578705494137*^9, 3.716578751737137*^9}, 
+   3.7165788516401367`*^9},ExpressionUUID->"f4b8b29a-7dad-49d5-8302-\
+d9a0588fc0dc"],
 
-Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{
-   RowBox[{
-    RowBox[{
-     RowBox[{
-      SuperscriptBox["f", 
-       TagBox[
-        RowBox[{"(", 
-         RowBox[{"0", ",", "2"}], ")"}],
-        Derivative],
-       MultilineFunction->None], "[", 
-      RowBox[{"r", ",", "\[Theta]"}], "]"}], "+", 
-     RowBox[{"r", " ", 
-      RowBox[{"(", 
-       RowBox[{
-        RowBox[{
-         SuperscriptBox["f", 
-          TagBox[
-           RowBox[{"(", 
-            RowBox[{"1", ",", "0"}], ")"}],
-           Derivative],
-          MultilineFunction->None], "[", 
-         RowBox[{"r", ",", "\[Theta]"}], "]"}], "+", 
-        RowBox[{"r", " ", 
-         RowBox[{
-          SuperscriptBox["f", 
-           TagBox[
-            RowBox[{"(", 
-             RowBox[{"2", ",", "0"}], ")"}],
-            Derivative],
-           MultilineFunction->None], "[", 
-          RowBox[{"r", ",", "\[Theta]"}], "]"}]}]}], ")"}]}]}], "\[Equal]", 
-    "0"}], ",", 
-   RowBox[{"\[LeftAssociation]", 
-    RowBox[{
-     RowBox[{"\<\"Mapping\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"r", "\[Equal]", 
-         SqrtBox[
-          RowBox[{
-           SuperscriptBox["x", "2"], "+", 
-           SuperscriptBox["y", "2"]}]]}], ",", 
-        RowBox[{"\[Theta]", "\[Equal]", 
-         RowBox[{"ArcTan", "[", 
-          RowBox[{"x", ",", "y"}], "]"}]}]}], "}"}]}], ",", 
-     RowBox[{"\<\"Assumptions\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{
-         RowBox[{"x", "\[Element]", "Reals"}], "&&", 
-         RowBox[{"y", "\[Element]", "Reals"}]}], ",", 
-        RowBox[{
-         RowBox[{"r", ">", "0"}], "&&", 
-         RowBox[{
-          RowBox[{"-", "\[Pi]"}], "<", "\[Theta]", "\[LessEqual]", 
-          "\[Pi]"}]}]}], "}"}]}]}], "\[RightAssociation]"}]}], 
-  "}"}]], "Output",
- CellChangeTimes->{
-  3.6970926699973173`*^9},ExpressionUUID->"4542475b-1907-4fd6-bc7f-\
-31fc0cee18c5"]
+Cell[BoxData["\<\"E:\\\\Idea \
+Projects\\\\MoreCalculus\\\\MoreCalculus-0.2.0.paclet\"\>"], "Output",
+ CellChangeTimes->{{3.7165786405941367`*^9, 3.716578670244137*^9}, {
+   3.7165787063131366`*^9, 3.7165787535921364`*^9}, 
+   3.7165788522671366`*^9},ExpressionUUID->"1e0ca069-072d-4357-88a7-\
+31d0c2ad5204"]
 }, Open  ]],
 
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"Assuming", "[", 
-  RowBox[{
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"r", ">", "0"}], ",", 
-     RowBox[{
-      RowBox[{"-", "Pi"}], "<", "\[Theta]", "<", "Pi"}]}], "}"}], ",", 
-   "\[IndentingNewLine]", 
-   RowBox[{"DChange", "[", 
-    RowBox[{
-     RowBox[{
-      RowBox[{
-       RowBox[{"D", "[", 
-        RowBox[{
-         RowBox[{"f", "[", 
-          RowBox[{"x", ",", "y"}], "]"}], ",", "x", ",", "x"}], "]"}], "+", 
-       RowBox[{"D", "[", 
-        RowBox[{
-         RowBox[{"f", "[", 
-          RowBox[{"x", ",", "y"}], "]"}], ",", "y", ",", "y"}], "]"}]}], 
-      "\[Equal]", "0"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Thread", "[", "\[IndentingNewLine]", 
-      RowBox[{
-       RowBox[{"{", 
-        RowBox[{"r", ",", "\[Theta]"}], "}"}], "==", 
-       RowBox[{"CoordinateTransformData", "[", 
-        RowBox[{
-         RowBox[{"\"\<Cartesian\>\"", "\[Rule]", "\"\<Polar\>\""}], ",", 
-         "\"\<Mapping\>\"", ",", 
-         RowBox[{"{", 
-          RowBox[{"x", ",", "y"}], "}"}]}], "]"}]}], "\[IndentingNewLine]", 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"{", 
-      RowBox[{"x", ",", "y"}], "}"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"{", 
-      RowBox[{"r", ",", "\[Theta]"}], "}"}], ",", 
-     RowBox[{"f", "[", 
-      RowBox[{"x", ",", "y"}], "]"}]}], "]"}]}], "]"}]], "Input",ExpressionUUI\
-D->"e8577ac9-73b4-4ef2-864f-4c36533cf21e"],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{
-   RowBox[{
-    SuperscriptBox["f", 
-     TagBox[
-      RowBox[{"(", 
-       RowBox[{"0", ",", "2"}], ")"}],
-      Derivative],
-     MultilineFunction->None], "[", 
-    RowBox[{"r", ",", "\[Theta]"}], "]"}], "+", 
-   RowBox[{"r", " ", 
-    RowBox[{"(", 
-     RowBox[{
-      RowBox[{
-       SuperscriptBox["f", 
-        TagBox[
-         RowBox[{"(", 
-          RowBox[{"1", ",", "0"}], ")"}],
-         Derivative],
-        MultilineFunction->None], "[", 
-       RowBox[{"r", ",", "\[Theta]"}], "]"}], "+", 
-      RowBox[{"r", " ", 
-       RowBox[{
-        SuperscriptBox["f", 
-         TagBox[
-          RowBox[{"(", 
-           RowBox[{"2", ",", "0"}], ")"}],
-          Derivative],
-         MultilineFunction->None], "[", 
-        RowBox[{"r", ",", "\[Theta]"}], "]"}]}]}], ")"}]}]}], "\[Equal]", 
-  "0"}]], "Output",
- CellChangeTimes->{
-  3.6970926986343184`*^9},ExpressionUUID->"dd81ca4f-ed8d-42c1-ba36-\
-238e22a03864"]
-}, Open  ]]
-}, Open  ]]
-}, Open  ]]
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7165780636881366`*^9, 
+  3.7165780670231366`*^9}},ExpressionUUID->"ac5dbf5c-46f6-4275-a0e4-\
+000d4c670520"]
 },
 WindowSize->{1006, 662},
-WindowMargins->{{306, Automatic}, {Automatic, 151}},
+WindowMargins->{{Automatic, 68}, {Automatic, 167}},
 DockedCells->{
   Cell[
    BoxData[
@@ -477,80 +239,53 @@ DockedCells->{
     "\"Get@MoreCalculus`\"", ButtonFunction :> Get["MoreCalculus`", Path -> {
          NotebookDirectory[]}], Method -> "Queued", Appearance -> Automatic, 
      Evaluator -> Automatic]]]},
-FrontEndVersion->"11.1 for Microsoft Windows (64-bit) (February 5, 2017)",
+FrontEndVersion->"11.2 for Microsoft Windows (64-bit) (September 10, 2017)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
 
 (* Internal cache information *)
 (*CellTagsOutline
-CellTagsIndex->{
- "Info23676827117-6439561"->{
-  Cell[4419, 140, 372, 7, 124, "Print",
-   CellTags->"Info23676827117-6439561"]},
- "Info13697096254-3414425"->{
-  Cell[4943, 155, 440, 9, 143, "Print",
-   CellTags->"Info13697096254-3414425"]}
- }
+CellTagsIndex->{}
 *)
 (*CellTagsIndex
-CellTagsIndex->{
- {"Info23676827117-6439561", 15017, 487},
- {"Info13697096254-3414425", 15129, 490}
- }
+CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
+Cell[558, 20, 282, 6, 48, "Input",ExpressionUUID->"314a36c4-308d-499d-9e67-f26cc86cf79a"],
 Cell[CellGroupData[{
-Cell[580, 22, 86, 0, 63, "Section"],
-Cell[669, 24, 81, 0, 30, "Input"],
-Cell[753, 26, 226, 5, 30, "Input"],
-Cell[CellGroupData[{
-Cell[1004, 35, 229, 5, 30, "Input"],
-Cell[1236, 42, 104, 0, 30, "Output"]
+Cell[865, 30, 259, 6, 28, "Input",ExpressionUUID->"4b315dde-7d9b-486c-8d52-3eb86b90af62"],
+Cell[1127, 38, 1309, 35, 53, "Output",ExpressionUUID->"f7102b2b-09d8-494a-89fa-963c7d516514"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1377, 47, 313, 7, 50, "Input"],
-Cell[1693, 56, 125, 0, 30, "Output"],
-Cell[1821, 58, 144, 2, 30, "Output"]
+Cell[2473, 78, 186, 4, 28, "Input",ExpressionUUID->"7c9be61a-d8e5-470b-9eea-12f9577115ee"],
+Cell[2662, 84, 844, 21, 52, "Output",ExpressionUUID->"9972922a-86d7-493c-be58-3c3596553c31"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2002, 65, 299, 8, 30, "Input"],
-Cell[2304, 75, 163, 2, 30, "Output"]
+Cell[3543, 110, 363, 9, 28, "Input",ExpressionUUID->"bd049567-a40c-404c-a2e7-e31744c2eaa8"],
+Cell[3909, 121, 283, 5, 32, "Output",ExpressionUUID->"b6eda97b-2bd5-4b78-8b79-9349cd9cb4cf"]
 }, Open  ]],
-Cell[2482, 80, 824, 19, 107, "Input"],
-Cell[3309, 101, 977, 32, 30, "Input"],
+Cell[4207, 129, 350, 6, 67, "Input",ExpressionUUID->"0a4da8a2-5d54-42d8-b3c6-92bb455e67c3"],
 Cell[CellGroupData[{
-Cell[4311, 137, 105, 1, 30, "Input"],
-Cell[4419, 140, 372, 7, 124, "Print",
- CellTags->"Info23676827117-6439561"]
+Cell[4582, 139, 344, 6, 28, "Input",ExpressionUUID->"2e7573cb-4760-468a-ad14-a6114354e1a6"],
+Cell[4929, 147, 326, 6, 32, "Output",ExpressionUUID->"d8a0544f-efaa-4e8a-95c9-2c79a7b70f77"]
 }, Open  ]],
+Cell[5270, 156, 229, 5, 28, "Input",ExpressionUUID->"ff514304-aa59-4dd2-948f-19c8aecde5ee"],
 Cell[CellGroupData[{
-Cell[4828, 152, 112, 1, 30, "Input"],
-Cell[4943, 155, 440, 9, 143, "Print",
- CellTags->"Info13697096254-3414425"]
+Cell[5524, 165, 217, 4, 28, "Input",ExpressionUUID->"71e3aad8-a512-4cdf-937d-b3a20d75f6e8"],
+Cell[5744, 171, 215, 5, 32, "Output",ExpressionUUID->"22800929-7fe5-4a4f-947f-200e8b9fcc17"]
 }, Open  ]],
-Cell[5398, 167, 115, 1, 30, "Input"],
+Cell[5974, 179, 195, 4, 28, "Input",ExpressionUUID->"26fa66a9-a029-4025-a0e0-833cce72c6ea"],
 Cell[CellGroupData[{
-Cell[5538, 172, 87, 0, 43, "Subsection"],
-Cell[CellGroupData[{
-Cell[5650, 176, 557, 15, 88, "Input"],
-Cell[6210, 193, 201, 6, 30, "Output"]
+Cell[6194, 187, 207, 4, 28, "Input",ExpressionUUID->"f2b68986-087f-4972-8f96-cf4ed890442e"],
+Cell[6404, 193, 604, 14, 32, "Output",ExpressionUUID->"ffc37291-7d5d-4127-a073-6f5ef946f83d"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6448, 204, 997, 29, 69, "Input"],
-Cell[7448, 235, 1900, 61, 74, "Output"]
+Cell[7045, 212, 282, 5, 28, "Input",ExpressionUUID->"f4b8b29a-7dad-49d5-8302-d9a0588fc0dc"],
+Cell[7330, 219, 308, 5, 32, "Output",ExpressionUUID->"1e0ca069-072d-4357-88a7-31d0c2ad5204"]
 }, Open  ]],
-Cell[CellGroupData[{
-Cell[9385, 301, 731, 21, 50, "Input"],
-Cell[10119, 324, 1902, 61, 74, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[12058, 390, 1407, 39, 145, "Input"],
-Cell[13468, 431, 957, 34, 33, "Output"]
-}, Open  ]]
-}, Open  ]]
-}, Open  ]]
+Cell[7653, 227, 156, 3, 28, "Input",ExpressionUUID->"ac5dbf5c-46f6-4275-a0e4-000d4c670520"]
 }
 ]
 *)
